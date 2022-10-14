@@ -27,6 +27,12 @@ STOP_COMMAND = get_command("STOP_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    command(["انهاء"])
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @AdminRightsCheck
 async def stop_music(cli, message: Message, _, chat_id):
     if not len(message.command) == 1:
