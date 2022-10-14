@@ -43,15 +43,15 @@ class YukkiBot(Client):
             sys.exit()
         try:
             await self.set_bot_commands([
-    BotCommand("ping", "Check that bot is alive or dead"),
-    BotCommand("play", "Starts playing the requested song"),
-    BotCommand("skip", "Moves to the next track in queue"),
-    BotCommand("pause", "Pause the current playing song"),
-    BotCommand("resume", "Resume the paused song"),
-    BotCommand("end", "Clear the queue and leave voice chat"),
-    BotCommand("shuffle", "Randomly shuffles the queued playlist."),
-    BotCommand("playmode", "Allows you to change the default playmode for your chat"),
-    BotCommand("settings", "Open the settings of the music bot for your chat.")])
+    BotCommand("ping", "لقياس سرعة النت"),
+    BotCommand("play", "لتشغيل اغنية في المجموعة"),
+    BotCommand("skip", "لتخطي الأغنية الحالية"),
+    BotCommand("mute", "لكتم الأغنية"),
+    BotCommand("unmute", "لألغاء كتم الأغنية"),
+    BotCommand("stop", "لأنهاء التشغيل"),
+    BotCommand("song", "لتحميل أغنية داخل خاص البوت"),
+    BotCommand("sudolist", "لطلب مساعدة المطور"),
+    BotCommand("settings", "لعرض أعدادات البوت")])
         except:
             pass
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
