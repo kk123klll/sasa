@@ -2,6 +2,8 @@ from strings.filters import command
 from pyrogram import filters, Client
 from YukkiMusic import app
 from typing import Union
+from pyrogram.types import (InlineKeyboardButton,
+                            InlineKeyboardMarkup, Message)
 
 
 @app.on_message(command(["سورس","السورس","المطور","المبرمج"])
