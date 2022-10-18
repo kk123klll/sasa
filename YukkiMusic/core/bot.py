@@ -43,13 +43,14 @@ class YukkiBot(Client):
             sys.exit()
         try:
             await self.set_bot_commands([
+    BotCommand("start", "رسالة البدء"),
     BotCommand("ping", "لقياس سرعة النت"),
     BotCommand("play", "لتشغيل اغنية في المجموعة"),
     BotCommand("skip", "لتخطي الأغنية الحالية"),
     BotCommand("mute", "لكتم الأغنية"),
     BotCommand("unmute", "لألغاء كتم الأغنية"),
     BotCommand("stop", "لأنهاء التشغيل"),
-    BotCommand("song", "لتحميل أغنية داخل خاص البوت"),
+    BotCommand("song", "لتحميل أغنية او فلم"),
     BotCommand("sudolist", "لطلب مساعدة المطور"),
     BotCommand("settings", "لعرض أعدادات البوت")])
         except:
