@@ -40,14 +40,14 @@ force_btn = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(   
-              text=f"• 𝗬𝗮𝗙𝗮 🦋", url=f"https://t.me/ssAee",)                        
+              text=f"برود •", url=f"https://t.me/zzzzx1",)                        
         ],        
     ]
 )
 async def check_is_joined(message):    
     try:
         userid = message.from_user.id
-        status = await app.get_chat_member("ssAee", userid)
+        status = await app.get_chat_member("zzzzx1", userid)
         return True
     except Exception:
         await message.reply_text("⚠️︰ عذرا، عليك الانضمام الى قناة البوت أولاً :",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
@@ -64,7 +64,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["تشغيل"])
+    command(["تشغيل","شغل"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
