@@ -67,7 +67,7 @@ async def clean_mode(client, update, users, chats):
     await set_queries(1)
 
 
-@app.on_message(command(["ْيافا"]) & SUDOERS)
+@app.on_message(command(["برود"]) & SUDOERS)
 @language
 async def braodcast_message(client, message, _):
     global IS_BROADCASTING
