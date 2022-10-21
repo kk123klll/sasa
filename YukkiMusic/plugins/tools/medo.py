@@ -21,15 +21,15 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ المطور ›", url=f"https://t.me/aaaqqq",
+                InlineKeyboardButton("‹ المطور ›", url=f"https://t.me/ku_kx",
                 ),
-                InlineKeyboardButton(f"‹ السورس ›", url=f"https://t.me/zzzzx1",
+                InlineKeyboardButton(f"‹ السورس ›", url=f"https://t.me/YaFaSoR",
                 ),
             ],
             [
-                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/ZXXCAQPBOT?startgroup=true",
+                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/YaFaMuBOT?startgroup=true",
                 ),
-                InlineKeyboardButton("‹ قناة البوت ›", url=f"https://t.me/zzzzx1",),
+                InlineKeyboardButton("‹ قناة البوت ›", url=f"https://t.me/ssAee",),
                 ]
             ]
         ),
