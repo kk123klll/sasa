@@ -31,29 +31,11 @@ SONG_COMMAND = get_command("SONG_COMMAND")
 
 
 @app.on_message(
-    filters.command(SONG_COMMAND)
+    command(["بحث","تحميل"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
-@language
-async def song_commad_group(client, message: Message, _):
-    upl = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton(
-                    text=_["SG_B_1"],
-                    url=f"https://t.me/{app.username}?start=song",
-                ),
-            ]
-        ]
-    )
-    await message.reply_text(_["song_1"], reply_markup=upl)
-
-
-# Song Module
-
-
 @app.on_message(
     filters.command(SONG_COMMAND)
     & filters.private
@@ -63,6 +45,12 @@ async def song_commad_group(client, message: Message, _):
 @app.on_message(
     command(["تحميل","بحث"])
     & filters.private
+    & ~filters.edited
+    & ~BANNED_USERS
+)
+@app.on_message(
+    command(["تحميل","بحث"])
+    & filters.channel
     & ~filters.edited
     & ~BANNED_USERS
 )
