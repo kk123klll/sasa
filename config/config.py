@@ -21,10 +21,10 @@ API_ID = int(getenv("API_ID", "8964162"))
 API_HASH = getenv("API_HASH", "57fd71da68029890610ade3b62017472")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "5604293011:AAGE1c_hHQZ_LjHe5WSIm14IVRMtGwXdx7g")
+BOT_TOKEN = getenv("BOT_TOKEN", "5604293AGE1c_hHQZ_Lje5WSIm14IVRMtGwXdx7g")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://coffemusic3:alhajji313@coffe3.yy3svgf.mongodb.net/coffemusic3?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://coffic3:alhajjcoffey3svgf.mongob.net/coffemusic3?retryWrites=true&w=majority")
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "90")
