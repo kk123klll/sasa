@@ -197,7 +197,7 @@ async def start_comm(client, message: Message, _):
             try:
                 await message.reply_photo(
                     photo=config.START_IMG_URL,
-                    caption=_["start_2"].format(message.from_user.id)
+                    caption=_["start_2"].format(message.from_user.id
                     ),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
