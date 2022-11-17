@@ -15,21 +15,20 @@ from pyrogram.types import (InlineKeyboardButton,
     & ~filters.edited
 )
 async def ahmad(client: Client, message: Message):
-    await message.reply_video(
-        video="https://telegra.ph/file/0506fadf1547e11548b5c.mp4",
-        caption=f"""**‹ Welcome to the Music Source ›**""",
+    await message.reply_photo(
+        photo="https://telegra.ph//file/af1a88818924a8508a096.jpg",
+        caption=f"""𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒄𝒐𝒇𝒇𝒆𝒆 𝒎𝒖𝒔𝒊𝒄 𝒔𝒐𝒖𝒓𝒄𝒆, 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 𝒃𝒚 𝒑𝒓𝒆𝒔𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒃𝒖𝒕𝒕𝒐𝒏, 𝒌𝒊𝒏𝒅𝒍𝒚""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ المطور ›", url=f"https://t.me/ku_kx",
+                InlineKeyboardButton("ᗩᕼᗰᗩᗪ 🇨🇦", url=f"https://t.me/sspaa",
                 ),
-                InlineKeyboardButton(f"‹ السورس ›", url=f"https://t.me/YaFaSoR",
+                InlineKeyboardButton(f"˹ 𝐶𝑜𝑓𝑓𝑒𝑒 ‌☕", url=f"https://t.me/ssaee",
                 ),
             ],
             [
-                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/YaFaMuBOT?startgroup=true",
+                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/CoffeMusic3bot?startgroup=true",
                 ),
-                InlineKeyboardButton("‹ قناة البوت ›", url=f"https://t.me/ssAee",),
                 ]
             ]
         ),
