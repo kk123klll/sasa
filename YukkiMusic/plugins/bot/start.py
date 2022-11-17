@@ -192,7 +192,7 @@ async def start_comm(client, message: Message, _):
             OWNER = OWNER_ID[0]
         except:
             OWNER = None
-        out = private_panel(_, app.username, OWNER, chat_id)
+        out = private_panel(_, app.username, OWNER)
         if config.START_IMG_URL:
             try:
                 await message.reply_photo(
@@ -203,12 +203,12 @@ async def start_comm(client, message: Message, _):
                 )
             except:
                 await message.reply_text(
-                    _["start_2"].format(message.from_user.mention),
+                    _["start_2"],
                     reply_markup=InlineKeyboardMarkup(out),
                 )
         else:
             await message.reply_text(
-                _["start_2"].format(message.from_user.mention),
+                _["start_2"],
                 reply_markup=InlineKeyboardMarkup(out),
             )
         if await is_on_off(config.LOG):
