@@ -44,7 +44,6 @@ class YukkiBot(Client):
         try:
             await self.set_bot_commands([
     BotCommand("start", "رسالة البدء"),
-    BotCommand("ping", "لقياس سرعة النت"),
     BotCommand("play", "لتشغيل اغنية في المجموعة"),
     BotCommand("skip", "لتخطي الأغنية الحالية"),
     BotCommand("mute", "لكتم الأغنية"),
