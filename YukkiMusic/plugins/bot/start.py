@@ -203,12 +203,12 @@ async def start_comm(client, message: Message, _):
                 )
             except:
                 await message.reply_text(
-                    _["start_7"].format(message.from_user.mention),
+                    _["start_8"].format(message.from_user.mention),
                     reply_markup=InlineKeyboardMarkup(out),
                 )
         else:
             await message.reply_text(
-                _["start_7"].format(message.from_user.mention),
+                _["start_8"].format(message.from_user.mention),
                 reply_markup=InlineKeyboardMarkup(out),
             )
         if await is_on_off(config.LOG):
