@@ -22,6 +22,8 @@ def start_pannel(_):
                 text="أضغط هنا لمتابعة التحديثات",
                 url=f"https://t.me/ssaee",
             ),
+        ],
+        [
             InlineKeyboardButton(
                 text=_["S_B_2"], callback_data="settings_helper"
             ),
