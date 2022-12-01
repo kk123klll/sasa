@@ -24,7 +24,7 @@ API_HASH = getenv("API_HASH", "57fd71da68029890610ade3b62017472")
 BOT_TOKEN = getenv("BOT_TOKEN", "5604293AGE1c_hHQZ_Lje5WSIm14IVRMtGwXdx7g")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://coffic3:alhajjcoffey3svgf.mongob.net/coffemusic3?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://coffic3:.mongob.net/coffemusic3?retryWrites=true&w=majority")
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
     getenv("DURATION_LIMIT", "90")
@@ -55,7 +55,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/K-musicBot/K-Music",
+    "https://github.com/K-Music777/Music",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
