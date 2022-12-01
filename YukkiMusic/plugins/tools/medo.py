@@ -27,7 +27,7 @@ async def ahmad(client: Client, message: Message):
                 ),
             ],
             [
-                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/CoffeMusic3bot?startgroup=true",
+                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/AprilMubot?startgroup=true",
                 ),
                 ]
             ]
