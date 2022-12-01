@@ -60,7 +60,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"أضافة الى مجموعة", url=f"https://t.me/CoffeMusic3bot?startgroup=true",
+                text=f"أضافة الى مجموعة", url=f"https://t.me/AprilMubot?startgroup=true",
             )
         ],
     ]
