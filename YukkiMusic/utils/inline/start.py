@@ -66,6 +66,9 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text=_["S_B_8"], callback_data="settings_back_helper"
             )
+            InlineKeyboardButton(
+                text="• قناة المطور •", url="https://t.me/sspaa"
+            )
         ]
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
