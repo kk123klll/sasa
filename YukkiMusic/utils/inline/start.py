@@ -67,7 +67,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text=_["S_B_8"], callback_data="settings_back_helper"
             )
             InlineKeyboardButton(
-                text="• قناة المطور •", url="https://t.me/sspaa"
+                text="• قناة المطور •", url="https://t.me/sspaa",
             )
         ]
     ]
@@ -105,7 +105,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
                 text=_["S_B_5"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
-            text="• اضافة لقناة •",
+                text="• اضافة لقناة •",
                 url=f"https://t.me/{BOT_USERNAME}?startchannel=true",
             )
         ]
