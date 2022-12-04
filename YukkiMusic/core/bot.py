@@ -49,7 +49,6 @@ class YukkiBot(Client):
     BotCommand("mute", "لكتم الأغنية"),
     BotCommand("unmute", "لألغاء كتم الأغنية"),
     BotCommand("stop", "لأنهاء التشغيل"),
-    BotCommand("song", "لتحميل أغنية او فلم"),
     BotCommand("sudolist", "لطلب مساعدة المطور"),
     BotCommand("settings", "لعرض أعدادات البوت")])
         except:
