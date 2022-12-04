@@ -20,7 +20,7 @@ def start_pannel(_):
         [
             InlineKeyboardButton(
                 text="أضغط هنا لمتابعة التحديثات",
-                url=f"https://t.me/ssaee",
+                url=f"https://t.me/sspaa",
             ),
         ],
         [
@@ -66,6 +66,9 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text=_["S_B_8"], callback_data="settings_back_helper"
             )
+            InlineKeyboardButton(
+                text="‹ قناة المطور ›", url="https://t.me/sspaa"
+            )
         ]
     ]
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -101,6 +104,10 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
                 text=_["S_B_5"],
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+            )
+            InlineKeyboardButton(
+                text="‹ اضافة لقناة ›",
+                url=f"https://t.me/AprilMubot?startchannel=true",
             )
         ]
     )
