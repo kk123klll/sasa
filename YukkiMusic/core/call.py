@@ -208,6 +208,7 @@ class Call(PyTgCalls):
             if get.status == "banned" or get.status == "kicked":
                 raise AssistantErr(
                     _["call_2"].format(userbot.username, userbot.id)
+                caption=_["UNBAN_BUTTON"],reply_markup=InlineKeyboardMarkup(button),
                 )
         except UserNotParticipant:
             chat = await app.get_chat(chat_id)
