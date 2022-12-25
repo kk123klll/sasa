@@ -60,7 +60,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"• 𝑨 𝑷 𝑹 𝑰 𝑳 🫀", url=f"https://t.me/sspaa",
+                text=f"- april 🌲", url=f"https://t.me/sspaa",
             )
         ],
     ]
