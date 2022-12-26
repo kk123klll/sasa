@@ -6,12 +6,8 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
 
-@app.on_message(command(["سورس","السورس","المطور","مطور"])
+@app.on_message(command(["سورس ايما","المبرمج","السورس"])
     & filters.group
-    & ~filters.edited
-)
-@app.on_message(command(["سورس","السورس","المطور","مطور"])
-    & filters.channel
     & ~filters.edited
 )
 async def ahmad(client: Client, message: Message):
@@ -21,13 +17,13 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("𝑨 𝑯 𝑴 𝑬 𝑫", url=f"https://t.me/ccbee",
+                InlineKeyboardButton("- مطور ايما .", url=f"https://t.me/ccbee",
                 ),
-                InlineKeyboardButton(f"𝑨 𝑷 𝑹 𝑰 𝑳", url=f"https://t.me/sspaa",
+                InlineKeyboardButton(f"قناة ايما .", url=f"https://t.me/sspaa",
                 ),
             ],
             [
-                InlineKeyboardButton("‹ أضفني لمجموعتك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                InlineKeyboardButton("‹ ضيفني لمجموعتك ›", url=f"https://t.me/AprilMubot?startgroup=true",
                 ),
                 ]
             ]
