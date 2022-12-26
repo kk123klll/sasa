@@ -30,7 +30,7 @@ def start_pannel(_):
 
             InlineKeyboardButton(
 
-                text="‹ تحديثات البوت ›",
+                text="‹ قناة ايما ›",
 
                 url=f"https://t.me/sspaa",
 
@@ -117,6 +117,12 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             InlineKeyboardButton(
 
                 text=_["S_B_8"], callback_data="settings_back_helper"
+
+        ],
+        [
+            InlineKeyboardButton(
+
+                text=["‹قناة ايما›"], url="https://t.me/sspaa"
 
             )
 
