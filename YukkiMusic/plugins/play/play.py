@@ -50,7 +50,7 @@ async def check_is_joined(message):
         status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
-        await message.reply_text("💡 ¦ عذࢪاً ، أشترك في قناة البوت أولاً :",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text("👋 ¦ آسفة يا صديقي ، لازم تشترك بقناتي أول شيء عشان تقدر تستخدم أوامري 🧚‍♀.\n\n✨¦ قناة ايما  : @sspaa 👋.",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
