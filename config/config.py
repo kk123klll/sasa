@@ -64,7 +64,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", "https://t.me/sspaa"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
     "SUPPORT_GROUP", None
@@ -167,7 +167,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph//file/a134e5cf6ca22969e7234.jpg")
+START_IMG_URL = getenv("START_IMG_URL", None)
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
