@@ -122,7 +122,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             
             InlineKeyboardButton(
 
-                text=["‹قناة ايما›"], url="https://t.me/sspaa"
+                text="‹قناة ايما›", url="https://t.me/sspaa"
 
             ),
 
