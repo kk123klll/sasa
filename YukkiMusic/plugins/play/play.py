@@ -47,10 +47,11 @@ force_btn = InlineKeyboardMarkup(
 async def check_is_joined(message: Message, _, chat_id):    
     try:
         userid = message.from_user.id
+        user_name = message.from_user.first_name
         status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
-        await message.reply_text(f"👋┋اهلا عزيزي {usarname} \n🎙┋لازم تشترك بقناة البوت أول شيء\n⚙┋تابع تحديثات بوت ايما: @sspaa",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text(f"👋┋اهلا عزيزي {usar_name} \n🎙┋لازم تشترك بقناة البوت أول شيء\n⚙┋تابع تحديثات بوت ايما: @sspaa",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
