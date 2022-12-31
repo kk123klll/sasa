@@ -6,7 +6,7 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-lyricsgenius
+git+https://github.com/DevKassem/LyricsGenius
 motor==3.0.0
 pillow
 psutil
