@@ -1,5 +1,5 @@
 aiofiles
-aiohttp
+git+https://github.com/DevKassem/aiohttp
 asyncio
 dnspython
 ffmpeg-python
