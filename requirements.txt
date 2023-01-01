@@ -1,6 +1,6 @@
 aiofiles
-git+https://github.com/DevKassem/aiohttp
-git+https://github.com/DevKassem/awesome-asyncio
+aiohttp
+asyncio
 dnspython
 ffmpeg-python
 gitpython
