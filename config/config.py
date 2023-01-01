@@ -55,7 +55,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/sspaa/music",
+    "https://github.com/DevKassem/BotEmma",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
@@ -137,7 +137,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 SET_CMDS = getenv("SET_CMDS", False)
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BAAZaGOVy4RgSy-jF07TkDVGSTz6fU5Tkj2VC49ebo0XNLufSXBwr9LVKWp-dP868MJ-1K-5k0h-FGYrEaQBwcDexfgTESd9Th2pw-Mxsz7EeXGcrwg2KCte-6cD_RDOm0x5DK6mRzEeH-41A4D1nLRtPxsR4S8E1mL4-6oQSebui2fyB_VdCEtjLy3XrxnjpNjGIVJz9DhBnJsrcrEDBADrMQ-MDXcVuUYfFaFE3W_4vpFYW7LQ48emI_CsoIJRP_8tdzxxpqk6OWyRQmCEgWJQFX9iJ7KHvsKUdw7qN6UjPgtSSZrmafg7nsyA9tJ7lSSMjHT6OHI11wYQX7lgG4QiAAAAAWES_XAA")
+STRING1 = getenv("STRING_SESSION", "BABiYEdpqSg-8vGfpkZyZZIE4aj0s_EiWdwk9GHTZg-OifoAsmMEV-yzRfrGX90-PrPsYo59WjOZPi1vltNceEsa5PW4wopBuuMK-Hpm0P36KPbIbjQWtdOGovLlVEj_SbkotD8JVIapsXTA2_X4jcq5pWlQhqiz16flFrt1E8oZs58Ol7KQjuNpyZMqCdrNtO-OJdVfftVpMLDrLensZz3YNVDYj9Oo7Qq1WFC-B-6xgUxSpsOjqnHBBL4Ry-Ai3Sr1wVSPG8wuchqIG5ihZPWm8If_hnBi9BOg-43F6o_83YA9buUZu0Y4k7yDFiRnmcnF7JMXTde5_4gpjeJ0Ea4SAAAAAWES_XAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
