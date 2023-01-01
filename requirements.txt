@@ -2,11 +2,11 @@ aiofiles
 aiohttp
 asyncio
 dnspython
-git+https://github.com/DevKassem/ffmpeg-python
+ffmpeg-python
 gitpython
 hachoir
 heroku3
-git+https://github.com/DevKassem/LyricsGenius
+LyricsGenius
 motor==3.0.0
 pillow
 psutil
@@ -16,9 +16,9 @@ pyrogram==1.4.16
 python-dotenv
 pyyaml==5.3.1
 requests
-git+https://github.com/DevKassem/speedtest-cli
+speedtest-cli
 spotipy
 tgcrypto
 youtube-search
 youtube-search-python
-git+https://github.com/DevKassem/yt-dlp
+yt-dlp
