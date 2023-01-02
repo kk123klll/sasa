@@ -6,7 +6,7 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
 
-@app.on_message(command(["سورس ايما","المبرمج","السورس"])
+@app.on_message(command(["سورس ايما","السورس"])
     & filters.group
     & ~filters.edited
 )
