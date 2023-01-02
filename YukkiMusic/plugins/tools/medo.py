@@ -3,7 +3,7 @@ from pyrogram import filters, Client
 from YukkiMusic import app
 from typing import Union
 from pyrogram.types import (InlineKeyboardButton,
-                            InlineKeyboardMarkup, Message)
+                            InlineKeyboardMarkup, Message, CallbackQuery)
 
 
 @app.on_message(command(["سورس ايما","السورس"])
@@ -25,7 +25,33 @@ async def ahmad(client: Client, message: Message):
             [
                 InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
                 ),
-                ]
+                InlineKeyboardButton("حول", callback_data=f"eslam"),
+            ],
             ]
+        ),
+    )
+    
+    
+@app.on_callback_query(filters.regex("eslam"))
+async def eslam(_, query: CallbackQuery):
+   await query.edit_message_text(
+       f"""- معلومات حول بوت ايما اتبع الازرار .""",
+       reply_markup=InlineKeyboardMarkup(
+          [
+               [
+                    InlineKeyboardButton(
+                        "- مطور السورس .", url=f"https://t.me/ccbee"),
+                    InlineKeyboardButton(
+                        "- قناة السورس .", url=f"https://t.me/sspqa")
+                ],[
+                    InlineKeyboardButton(
+                        "المساعد", url=f"https://t.me/AprilMusic2"),
+                ],[ 
+                    InlineKeyboardButton(
+                        "اغلاق", callback_data="close"),
+                    InlineKeyboardButton(
+                        "رجوع", callback_data="back11"),
+               ],
+          ]
         ),
     )
