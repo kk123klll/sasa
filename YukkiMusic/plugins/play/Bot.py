@@ -26,27 +26,89 @@ IMG_BOT1 = getenv("IMG_BOT1")
 
 OWNER = getenv("OWNER")
 
+OWNER_NAME = getenv("OWNER_NAME")
+
 NAME_BOT = getenv("NAME_BOT")
 
+
+def get_file_id(msg: Message):
+
+    if msg.media:
+
+        for message_type in (
+
+            "photo",
+
+            "animation",
+
+            "audio",
+
+            "document",
+
+            "video",
+
+            "video_note",
+
+            "voice",
+
+            # "contact",
+
+            # "dice",
+
+            # "poll",
+
+            # "location",
+
+            # "venue",
+
+            "sticker",
+
+        ):
+
+            obj = getattr(msg, message_type)
+
+            if obj:
+
+                setattr(obj, "message_type", message_type)
+
+                return obj
 
 @app.on_message(
     command(["بوت"])
     & filters.group
     & ~filters.edited
 )
+
 async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"{IMG_BOT1}",
-        caption=f"اسمي {NAME_BOT} عمري.", 
+
+    usr = await client.get_users(ID_BOT1)
+
+    name = usr.first_name
+
+    async for photo in client.iter_profile_photos(ID_BOT1, limit=1):
+
+                    await message.reply_photo(photo.file_id,       caption=f"اسمي {NAME_BOT} عمري .", 
+
         reply_markup=InlineKeyboardMarkup(
+
             [
+
                 [
+
                     InlineKeyboardButton(
-                        "مطور البوت", url=f"https://t.me/{OWNER}")
+
+                        f"{OWNER_NAME}", url=f"https://t.me/{OWNER}") 
+
                 ],[
+
                     InlineKeyboardButton(
-                        ". اضافة الى مجموعة -", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+
+                        "- اضافة الى مجموعة .", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+
                 ],
+
             ]
+
         ),
+
     )
