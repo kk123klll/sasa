@@ -1,4 +1,4 @@
-import asyncio
+ import asyncio
 from pyrogram import Client, filters
 from strings import get_command
 from strings.filters import command
@@ -10,6 +10,7 @@ from pyrogram.types import InlineKeyboardButton
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
+from YukkiMusic.misc import SUDOERS
 
 import re
 import sys
@@ -24,10 +25,11 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 OWNER = getenv("OWNER")
 
-OWNER_NAME = getenv("OWNER_NAME")
+ID_BOT1 = getenv("ID_BOT1")
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+NAME_BOT = getenv("NAME_BOT")
 
+DEV = getenv("DEV")
 
 def get_file_id(msg: Message):
 
@@ -72,20 +74,24 @@ def get_file_id(msg: Message):
                 return obj
 
 @app.on_message(
+
     command(["بوت"])
+
     & filters.group
+
     & ~filters.edited
+
 )
 
 async def khalid(client: Client, message: Message):
 
-    usr = await client.get_users(5769323463)
+    usr = await client.get_users(ID_BOT1)
 
     name = usr.first_name
 
-    async for photo in client.iter_profile_photos(5769323463, limit=1):
+    async for photo in client.iter_profile_photos(ID_BOT1, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي {MUSIC_BOT_NAME} عمري .", 
+                    await message.reply_photo(photo.file_id,       caption=f"اسمي {NAME_BOT} عمري .", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -95,13 +101,13 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                        f"{OWNER_NAME}", url=f"https://t.me/{OWNER}") 
+                      "- مطور السورس .", url=f"https://t.me/{OWNER}") 
 
                 ],[
 
                     InlineKeyboardButton(
 
-                        "- اضافة الى مجموعة .", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                       "- ضيفني لكروبك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
 
                 ],
 
@@ -110,3 +116,5 @@ async def khalid(client: Client, message: Message):
         ),
 
     )
+
+                
