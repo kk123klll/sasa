@@ -45,6 +45,8 @@ async def eslam(_, query: CallbackQuery):
                 ],[ 
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
+                    InlineKeyboardButton(
+                        "رجوع", callback_data="back"),
                ],
           ]
         ),
