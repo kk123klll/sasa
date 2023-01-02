@@ -28,7 +28,7 @@ OWNER = getenv("OWNER")
 
 OWNER_NAME = getenv("OWNER_NAME")
 
-OWNER_NAME = getenv("OWNER_BIO")
+OWNER_BIO = getenv("OWNER_BIO")
 
 
 @app.on_message(
