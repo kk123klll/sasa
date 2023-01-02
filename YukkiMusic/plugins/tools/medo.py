@@ -21,7 +21,7 @@ async def ahmad(client: Client, message: Message):
                 ),
             ],
             [
-                InlineKeyboardButton(". حول البوت -", callback_data=f"eslam"),
+                InlineKeyboardButton("‹ حول السورس ›", callback_data=f"eslam"),
             ],
             ]
         ),
@@ -46,7 +46,7 @@ async def eslam(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
                     InlineKeyboardButton(
-                        "رجوع", callback_data="back"),
+                        "رجوع", callback_data="back_button"),
                ],
           ]
         ),
