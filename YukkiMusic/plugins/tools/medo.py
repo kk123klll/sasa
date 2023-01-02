@@ -17,15 +17,11 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("- مطور ايما .", url=f"https://t.me/ccbee",
-                ),
-                InlineKeyboardButton(f"- قناة ايما .", url=f"https://t.me/sspaa",
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
                 ),
             ],
             [
-                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
-                ),
-                InlineKeyboardButton("حول", callback_data=f"eslam"),
+                InlineKeyboardButton(". حول البوت -", callback_data=f"eslam"),
             ],
             ]
         ),
@@ -49,8 +45,6 @@ async def eslam(_, query: CallbackQuery):
                 ],[ 
                     InlineKeyboardButton(
                         "اغلاق", callback_data="close"),
-                    InlineKeyboardButton(
-                        "رجوع", callback_data="back11"),
                ],
           ]
         ),
