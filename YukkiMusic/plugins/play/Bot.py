@@ -22,13 +22,11 @@ load_dotenv()
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-IMG_BOT1 = getenv("IMG_BOT1")
-
 OWNER = getenv("OWNER")
 
 OWNER_NAME = getenv("OWNER_NAME")
 
-NAME_BOT = getenv("NAME_BOT")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
 
 
 def get_file_id(msg: Message):
@@ -81,13 +79,13 @@ def get_file_id(msg: Message):
 
 async def khalid(client: Client, message: Message):
 
-    usr = await client.get_users(ID_BOT1)
+    usr = await client.get_users(BOT_USERNAME)
 
     name = usr.first_name
 
-    async for photo in client.iter_profile_photos(ID_BOT1, limit=1):
+    async for photo in client.iter_profile_photos(BOT_USERNAME, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي {NAME_BOT} عمري .", 
+                    await message.reply_photo(photo.file_id,       caption=f"اسمي {MUSIC_BOT_NAME} عمري .", 
 
         reply_markup=InlineKeyboardMarkup(
 
