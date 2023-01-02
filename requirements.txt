@@ -10,6 +10,7 @@ LyricsGenius
 motor==3.0.0
 pillow
 psutil
+git+https://github.com/DevKassem/uuuuwi
 py-tgcalls==0.8.6
 pykeyboard
 pyrogram==1.4.16
