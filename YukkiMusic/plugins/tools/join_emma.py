@@ -10,7 +10,7 @@ async def must_join_channel(bot: Client, msg: Message):
         return
     try:
         try:
-            await bot.get_chat_member(sspaa, msg.from_user.id)
+            await bot.get_chat_member("sspaa", msg.from_user.id)
         except UserNotParticipant:
             if "https://t.me/sspaa".isalpha():
                 link = u"https://t.me/sspaa"
