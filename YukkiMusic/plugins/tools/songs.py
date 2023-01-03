@@ -298,7 +298,6 @@ async def song_download_cb(client, CallbackQuery, _):
         await app.send_chat_action(
             chat_id=CallbackQuery.message.chat.id,
             action="upload_audio",
-            caption="- BY : @AprilMubot"
         )
         try:
             await CallbackQuery.edit_message_media(media=med)
