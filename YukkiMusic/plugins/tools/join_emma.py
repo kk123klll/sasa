@@ -6,13 +6,13 @@ from YukkiMusic import app
 
 @app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
-    if not YAFA_CHANNEL:  # Not compulsory
+    if not "https://t.me/sspaa":  # Not compulsory
         return
     try:
         try:
             await bot.get_chat_member(sspaa, msg.from_user.id)
         except UserNotParticipant:
-            if YAFA_CHANNEL.isalpha():
+            if "https://t.me/sspaa".isalpha():
                 link = u"https://t.me/sspaa"
             else:
                 chat_info = await bot.get_chat(sspaa)
