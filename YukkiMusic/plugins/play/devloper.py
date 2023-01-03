@@ -7,7 +7,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
-from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP, OWNER_ID
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from YukkiMusic.misc import SUDOERS
@@ -25,7 +25,7 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 IMG_DEV1 = getenv("IMG_DEV1")
 
-OWNER = getenv("OWNER")
+OWNER_ID = getenv("OWNER_ID")
 
 BOTID = getenv("BOTID")
 
@@ -70,10 +70,10 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/{OWNER}")
+                        name, url=f"https://t.me/{OWNER_ID}")
                 ],[
                     InlineKeyboardButton(
-                        "‹ ضيفني لكروبك ›", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
                 ],
             ]
         ),
