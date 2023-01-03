@@ -101,7 +101,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                      "- مطور السورس .", url=f"https://t.me/{OWNER_ID}") 
+                      "- مطور السورس .", url=f"https://t.me/ccbee") 
 
                 ],[
 
