@@ -62,7 +62,6 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     usr = await client.get_users(5946704196)
     name = usr.first_name
     async for photo in client.iter_profile_photos(5946704196, limit=1):
@@ -71,10 +70,10 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url="user_id=OWNER",)
+                        name, url="https://t.me/ccbee")
                 ],[
                     InlineKeyboardButton(
-                        "‹ ضيفني لكروبك ›", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
                 ],
             ]
         ),
