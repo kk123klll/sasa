@@ -21,7 +21,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("عيونها")
 @app.on_message(command("ايدي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(f"{message.chat.id,} ايدي الكرورب : ")
+    await message.reply_text(f"ايدي الكروب :{```message.chat.id```}")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("منك! 🙂")
@@ -67,3 +67,15 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("رنا"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("دي عمري")
+@app.on_message(command("خاص"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("واللهي يبتاع الخاص قلبي تعب وعقلي تعب وأي ياي ياي .")
+@app.on_message(command("تصبحو ع خير"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("وانت بخير يا نور عيوني .")
+@app.on_message(command("ايمااا"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("قليل ذوق لا تعيط!!")
+@app.on_message(command("بتحبيني"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("طبعا بحبك لك ابرنييي 🤍🫂")
