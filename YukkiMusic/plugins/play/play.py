@@ -29,7 +29,6 @@ from YukkiMusic.utils.database import is_video_allowed
 from YukkiMusic.utils.decorators.language import languageCB
 from YukkiMusic.utils.decorators.play import PlayWrapper
 from YukkiMusic.utils.formatters import formats
-from YukkiMusic.plugins.play.playlist 
 import del_plist_msgfrom YukkiMusic.plugins.sudo.sudoers 
 import sudoers_listfrom YukkiMusic.utils.database 
 import (add_served_chat, add_served_user, blacklisted_chats, get_assistant, get_lang,
