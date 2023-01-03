@@ -70,7 +70,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url="https://t.me/ccbee")
+                        name, url="tg://user?id=594670419")
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
