@@ -21,7 +21,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("عيونها")
 @app.on_message(command("ايدي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(f"ايدي الكروب :{```message.chat.id```}")
+    await message.reply_text(f"ايدي الكروب :```{message.chat.id}```")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("منك! 🙂")
