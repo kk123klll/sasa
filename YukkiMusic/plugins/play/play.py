@@ -10,7 +10,7 @@ from  pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
 import string
 from ast import ExceptHandler
-
+from pyrogram import Client, filters
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
                             Message)
@@ -44,10 +44,11 @@ force_btn = InlineKeyboardMarkup(
         ],        
     ]
 )
-async def check_is_joined(message):    
+async def check_is_joined(message, client: Client):    
     try:
         userid = message.from_user.id
-        user_name = message.from_user.first_name
+        user_name =  = await client.get_users(message.from_user.id)
+    name = usr.first_name
         status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
