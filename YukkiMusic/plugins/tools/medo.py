@@ -36,7 +36,7 @@ async def eslam(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "- مطور السورس .", url=f"https://t.me/ccbee"),
                     InlineKeyboardButton(
-                        "- قناة السورس .", url=f"https://t.me/sspaa")
+                        "- قناة السورس .", url=f"https://t.me/sspaa"),
                 ],[
                     InlineKeyboardButton(
                         "المساعد", url=f"https://t.me/AprilMusic2"),
