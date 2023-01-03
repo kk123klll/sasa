@@ -4,7 +4,7 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 from YukkiMusic import app
 
 
-@Client.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
+@app.on_message(~filters.edited & filters.incoming & filters.private, group=-1)
 async def must_join_channel(bot: Client, msg: Message):
     if not YAFA_CHANNEL:  # Not compulsory
         return
