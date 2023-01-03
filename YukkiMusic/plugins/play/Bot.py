@@ -23,7 +23,7 @@ load_dotenv()
 
 BOT_USERNAME = getenv("BOT_USERNAME")
 
-OWNER = getenv("OWNER")
+OWNER_ID = getenv("OWNER_ID")
 
 ID_BOT1 = getenv("ID_BOT1")
 
@@ -91,7 +91,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(5769323463, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي {NAME_BOT} عمري .", 
+                    await message.reply_photo(photo.file_id,       caption=f"اسمي {MUSIC_BOT_NAME} عمري .", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -101,13 +101,13 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                      "- مطور السورس .", url=f"https://t.me/{OWNER}") 
+                      "- مطور السورس .", url=f"https://t.me/{OWNER_ID}") 
 
                 ],[
 
                     InlineKeyboardButton(
 
-                       "- ضيفني لكروبك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                       "- ضيفني لكروبك .", url=f"https://t.me/AprilMubot?startgroup=true"),
 
                 ],
 
