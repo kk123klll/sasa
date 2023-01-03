@@ -18,49 +18,52 @@ async def bablo(client: Client, message: Message):
       
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "عيونها")
+    await message.reply_text("عيونها")
+@app.on_message(command("ايدي"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text(f"{message.chat.id,} ايدي الكرورب : ")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "منك! 🙂")
+    await message.reply_text("منك! 🙂")
 @app.on_message(command("بحبك"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "بس انا صغيرة!")
+    await message.reply_text("بس انا صغيرة!")
 @app.on_message(command("احمد"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "ده مطوري")
+    await message.reply_text("ده مطوري")
 @app.on_message(command("باي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "الله معك")
+    await message.reply_text("الله معك")
 @app.on_message(command("مرحبا"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "مرحبتين")
+    await message.reply_text("مرحبتين")
 @app.on_message(command("دوم"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "تسلم/ي")
+    await message.reply_text("تسلم/ي")
 @app.on_message(command("صباحو"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "ورد")
+    await message.reply_text("ورد")
 @app.on_message(command("صلاح"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "ده صحبي")
+    await message.reply_text("ده صحبي")
 @app.on_message(command("لجين"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "دي بنتي")
+    await message.reply_text("دي بنتي")
 @app.on_message(command("ابو سليمان"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "ده حبيبي")
+    await message.reply_text("ده حبيبي")
 @app.on_message(command("ايمن"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "طنبخة")
+    await message.reply_text("طنبخة")
 @app.on_message(command("هاي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "هايات")
+    await message.reply_text("هايات")
 @app.on_message(command("بولنغ"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "🎲")
+    await message.reply_text("🎲")
 @app.on_message(command("كيفكم"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "بخير وانت")
+    await message.reply_text("بخير وانت")
 @app.on_message(command("رنا"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(message.chat.id, "دي عمري")
+    await message.reply_text("دي عمري")
