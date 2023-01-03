@@ -44,10 +44,10 @@ force_btn = InlineKeyboardMarkup(
         ],        
     ]
 )
-async def check_is_joined(message, client: Client):    
+async def check_is_joined(message):    
     try:
         userid = message.from_user.id
-        user_name = await client.get_user_name(message.from_user.first_name.id)
+        user_name = await app.get_user_name(message.from_user.id)
         status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
@@ -82,7 +82,7 @@ async def play_commnd(
     url,
     fplay,
 ):
-    if not await check_is_joined(message, client):
+    if not await check_is_joined(message):
         return
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
