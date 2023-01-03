@@ -44,14 +44,13 @@ force_btn = InlineKeyboardMarkup(
         ],        
     ]
 )
-async def check_is_joined(message):    
+async def check_is_joined(message: Message, client: Client):    
     try:
-        user_id = message.from_user.id
-        user_name = message.from_user.first_name.id
-        status = await app.get_chat_member("sspaa", user_id)
+        userid = message.from_user.id
+        status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
-        await message.reply_text(f'⌯︙عذࢪاَ عزيزي ↫ {user_name} \n⌯︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ',reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text(f'⌯︙عذࢪاَ عزيزي ↫ {message.from_user.mention} \n⌯︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ',reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
@@ -82,7 +81,7 @@ async def play_commnd(
     url,
     fplay,
 ):
-    if not await check_is_joined(message):
+    if not await check_is_joined(message: Message, client=Client):
         return
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
