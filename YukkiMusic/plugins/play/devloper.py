@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
     & filters.group
     & ~filters.edited
 )
-async def khalid(client: Client, message: Message):
+async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     usr = await client.get_users(5946704196)
     name = usr.first_name
     async for photo in client.iter_profile_photos(5946704196, limit=1):
@@ -70,7 +70,7 @@ async def khalid(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        name, url="tg://user?id=594670419")
+                        name, user_id=OWNER)
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
