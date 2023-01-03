@@ -29,8 +29,6 @@ from YukkiMusic.utils.database import is_video_allowed
 from YukkiMusic.utils.decorators.language import languageCB
 from YukkiMusic.utils.decorators.play import PlayWrapper
 from YukkiMusic.utils.formatters import formats
-import (add_served_chat, add_served_user, blacklisted_chats, get_assistant, get_lang,
-        get_userss, is_on_off, is_served_private_chat)
 from YukkiMusic.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
