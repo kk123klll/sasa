@@ -47,8 +47,7 @@ force_btn = InlineKeyboardMarkup(
 async def check_is_joined(message, client: Client):    
     try:
         userid = message.from_user.id
-        user = await client.get_users(message.from_user.id)
-        name = user.first_name
+        user_name = await client.get_user_name(message.from_user.first_name.id)
         status = await app.get_chat_member("sspaa", userid)
         return True
     except Exception:
