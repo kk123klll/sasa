@@ -103,12 +103,17 @@ async def ahmad(client: Client, message: Message):
     await message.reply_voice(
         voice="https://t.me/sspaa/177",
         caption=f"""- Voice : JRO7I 🎙.
+
 - Jo!N : @sspaa 📡.""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
                 ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
             ]
         ),
     )
