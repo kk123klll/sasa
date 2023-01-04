@@ -117,7 +117,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي1"])
     & filters.group
     & ~filters.edited
 )
@@ -138,7 +138,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي2"])
     & filters.group
     & ~filters.edited
 )
@@ -162,7 +162,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي3"])
     & filters.group
     & ~filters.edited
 )
@@ -184,7 +184,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي4"])
     & filters.group
     & ~filters.edited
 )
@@ -204,7 +204,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي4"])
     & filters.group
     & ~filters.edited
 )
@@ -225,7 +225,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["ريمكس"])
+@app.on_message(command(["ريمكس1"])
     & filters.group
     & ~filters.edited
 )
@@ -247,7 +247,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["ريمكس"])
+@app.on_message(command(["ريمكس2"])
     & filters.group
     & ~filters.edited
 )
@@ -268,7 +268,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي5"])
     & filters.group
     & ~filters.edited
 )
@@ -290,7 +290,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي6"])
     & filters.group
     & ~filters.edited
 )
@@ -312,7 +312,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي7"])
     & filters.group
     & ~filters.edited
 )
@@ -334,7 +334,7 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي"])
+@app.on_message(command(["غنيلي8"])
     & filters.group
     & ~filters.edited
 )
