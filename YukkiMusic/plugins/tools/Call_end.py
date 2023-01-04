@@ -117,3 +117,242 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/207",
+        caption=f"""🎙Channel┋Emma 𝟸𝟶𝟸𝟹
+🎬 Voice┋سهران ويا جروحي""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/185",
+        caption=f"""🎬 BiGSaM - إنتي السبب.
+
+👤 BiGSaM Official.
+
+🕑 3:38 - 👁 17M.""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/173",
+        caption=f"""• Voice : مكملناش 🎤
+
+• Jo!n : @sspaa 🖇""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/137",
+        caption=f"""- لو جاي في رجوع انساني ✨.""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/96",
+        caption=f"""- VoiCe 🎙 : الغزالة منكدة .
+- Channel 🌨 : @sspaa .""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["ريمكس"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/85",
+        caption=f"""ريمكس تركي عراقي دموع تحسين Günay Aksoy لو بدالي Her Yer Karanlık دي جي هوس Dj Hows
+
+💿 | أبريل : @sspaa""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["ريمكس"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/66",
+        caption=f"""🔗 JO!N : @sspaa
+🔖 VO!CE : ريمكس""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/64",
+        caption=f"""🔗 JO!N : @sspaa
+
+🔖 VO!CE : April""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/27",
+        caption=f"""🔗 JO!N : @sspaa
+
+📌 VO!CE : Emma 2023""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/24",
+        caption=f"""🔗 JO!N : @sspaa
+
+📌 VO!CE : Emma 2023""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice="https://t.me/sspaa/16",
+        caption=f"""🔗 JO!N : @sspaa
+
+📌 VO!CE : Emma 2023""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
