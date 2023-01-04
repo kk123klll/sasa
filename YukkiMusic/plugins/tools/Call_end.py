@@ -22,6 +22,9 @@ async def bablo(client: Client, message: Message):
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
+@app.on_message(command("خاصك"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("بطل هل حركات 🙂!")
 @app.on_message(command("ايدي"))
 async def throw_dice(client, message: Message): 
     await message.reply_text(f"ايدي الكروب :```{message.chat.id}```")
@@ -55,6 +58,9 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("🤣🤣"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("مستفز 🙂")
+@app.on_message(command("😂😂"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("دامت عمري 🫂")
 @app.on_message(command("🥲🥲"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("دخيلو الكيوت 🥲")
@@ -344,6 +350,25 @@ async def ahmad(client: Client, message: Message):
         caption=f"""🔗 JO!N : @sspaa
 
 📌 VO!CE : Emma 2023""",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["حيوانه"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_sticker(
+        sticker="https://t.me/sspaa/198",
         reply_markup=InlineKeyboardMarkup(
         [
             [
