@@ -92,19 +92,20 @@ async def throw_dice(client, message: Message):
 async def throw_dice(client, message: Message): 
     await message.reply_text("قليل ادب 🙂.")
 
-@app.on_message(command(["سورس ايما","السورس"])
+@app.on_message(command(["غنيلي"])
     & filters.group
     & ~filters.edited
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_voice(
-        voice="https://t.me/sspaa/185",
-        caption=f"""- تم الارسال بواسطة : @AprilMubot""",
+        voice="https://t.me/sspaa/177",
+        caption=f"""- Voice : JRO7I 🎙.
+- Jo!N : @sspaa 📡.""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
-                )
+                ),
             ]
-        ]
+        ),
     )
