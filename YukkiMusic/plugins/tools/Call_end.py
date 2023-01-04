@@ -28,45 +28,45 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("بحبك"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("بس انا صغيرة!")
-@app.on_message(command("احمد"))
+@app.on_message(command("هههه"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("ده مطوري")
+    await message.reply_text("تؤبرني هالضحكة 🫂🤍")
 @app.on_message(command("باي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("الله معك")
+    await message.reply_text("الله معك 🤝")
 @app.on_message(command("مرحبا"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("مرحبتين")
+    await message.reply_text("مرحبتين 🤝")
 @app.on_message(command("دوم"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("تسلم/ي")
 @app.on_message(command("صباحو"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("ورد")
-@app.on_message(command("صلاح"))
+    await message.reply_text("ورد 💞")
+@app.on_message(command("هلو"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("ده صحبي")
-@app.on_message(command("لجين"))
+    await message.reply_text("هلوات 🙁")
+@app.on_message(command("ازيك"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("دي بنتي")
-@app.on_message(command("ابو سليمان"))
+    await message.reply_text("بخير وانت/ي ؟")
+@app.on_message(command("🤣🤣"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("ده حبيبي")
-@app.on_message(command("ايمن"))
+    await message.reply_text("مستفز 🙂")
+@app.on_message(command("🥲🥲"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("طنبخة")
+    await message.reply_text("دخيلو الكيوت 🥲")
 @app.on_message(command("هاي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("هايات")
+    await message.reply_text("هايات 🙃")
 @app.on_message(command("بولنغ"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("🎲")
+    await message.reply("🎲")
 @app.on_message(command("كيفكم"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("بخير وانت")
-@app.on_message(command("رنا"))
+    await message.reply_text("بخير وانت ؟")
+@app.on_message(command("محمد"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("دي عمري")
+    await message.reply_text("عليه أفضل الصلاة والسلام")
 @app.on_message(command("خاص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("واللهي يبتاع الخاص قلبي تعب وعقلي تعب وأي ياي ياي .")
@@ -79,3 +79,17 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("بتحبيني"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("طبعا بحبك لك ابرنييي 🤍🫂")
+@app.on_message(command("🙂🙂"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("الغزال منكد؟")
+@app.on_message(command("😍😍"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("حبيت؟")
+@app.on_message(command("تفه"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("قلة ذوق ترا ؟")
+@app.on_message(command("تفو"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("قليل ادب 🙂.")
+
+
