@@ -104,6 +104,7 @@ async def ahmad(client: Client, message: Message):
         [
             [
                 InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true")
-                ),
+                )
             ],
         ]
+    ),
