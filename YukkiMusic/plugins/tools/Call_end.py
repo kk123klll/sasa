@@ -98,7 +98,7 @@ async def throw_dice(client, message: Message):
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_voice(
-        voice="",
+        voice="https://t.me/sspaa/185",
         caption=f"""- تم الارسال بواسطة : @AprilMubot""",
         reply_markup=InlineKeyboardMarkup(
         [
