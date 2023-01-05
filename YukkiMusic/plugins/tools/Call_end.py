@@ -27,7 +27,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("بطل هل حركات 🙂!")
 @app.on_message(command("ايدي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(f"ايدي الكروب :```{message.chat.id}```")
+    await message.reply_text(f"ايدي الكروب : {message.chat.id}\nايديك : {message.user.id}")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("منك! 🙂")
@@ -369,6 +369,28 @@ async def ahmad(client: Client, message: Message):
 async def ahmad(client: Client, message: Message):
     await message.reply_sticker(
         sticker="https://t.me/sspaa/198",
+        reply_markup=InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                ),
+            ],
+            [
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+            ],
+            ]
+        ),
+    )
+@app.on_message(command(["غنيلي9"])
+    & filters.group
+    & ~filters.edited
+)
+async def ahmad(client: Client, message: Message):
+    await message.reply_voice(
+        voice=f"{git.voice_@sspaa}",
+        caption=f"""🔗 JO!N : @sspaa
+
+📌 VO!CE : Emma 2023""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
