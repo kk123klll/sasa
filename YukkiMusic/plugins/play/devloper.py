@@ -70,7 +70,7 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"https://t.me/ccbee")
+                        name, url=f"tg://user?id=5946704196")
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
