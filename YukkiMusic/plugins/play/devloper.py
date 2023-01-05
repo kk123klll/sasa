@@ -65,12 +65,35 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     usr = await client.get_users(5946704196)
     name = usr.first_name
     async for photo in client.iter_profile_photos(5946704196, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""- {name}\n- {usr.first_Bio}""", 
+                    await message.reply_photo(photo.file_id, 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                         name, url="tg://user?id=5946704196")
+                ],[
+                    InlineKeyboardButton(
+                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
+                ],
+            ]
+        ),
+    )
+@app.on_message(
+    command(["ايدي"])
+    & filters.group
+    & ~filters.edited
+)
+async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
+    usr = 
+    usr = await client.get_users(message.usr_id)
+    name = usr.first_name
+    async for photo in client.iter_profile_photos(message.usr_id, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""- اسمك: {name}\n-ايديك: {message.usr_id}""", 
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"tg://user?id={message.usr_id}")
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
