@@ -3,7 +3,7 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from strings.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
-from strings.decorators import authorized_users_only
+from strings.decorator import authorized_users_only
 from strings.CallMusic import client as user
 
 
