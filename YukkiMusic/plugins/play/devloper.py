@@ -87,9 +87,10 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     user = message.from_user.id
     usr = await client.get_users(user)
-    name = msg.from_user.mention
+    nam = message.from_user.mention
+    name = usr.first_name
     async for photo in client.iter_profile_photos(user, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""⌯︙شهل صورة ؟\n⌯︙اسمك : {name}\n⌯︙ايديك : {user}""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""⌯︙شهل صورة ؟\n⌯︙اسمك : {nam}\n⌯︙ايديك : {user}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
