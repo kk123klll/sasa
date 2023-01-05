@@ -83,8 +83,8 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     command(["ايدي"])
     & filters.group
     & ~filters.edited
+    & -filters.admin
 )
-@AdminRightsCheck
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     user = message.from_user.id
     usr = await client.get_users(user)
