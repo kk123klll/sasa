@@ -411,7 +411,7 @@ def get_file_id(msg: Message):
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
-    usr = await client.get_voice(-1001753699055)
+    voice = await client.get_voice(-1001753699055)
     async for voice in client.iter_channel_voice(-1001753699055, limit=1):
                     await message.reply_voice(voice.file_id,       caption=f"""- Be Cool Nerves Create : @sspaa 🌵.""", 
         reply_markup=InlineKeyboardMarkup(
