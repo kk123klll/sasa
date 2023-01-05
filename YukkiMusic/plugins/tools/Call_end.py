@@ -283,7 +283,7 @@ async def ahmad(client: Client, message: Message):
         voice="https://t.me/sspaa/64",
         caption=f"""🔗 JO!N : @sspaa
 
-🔖 VO!CE : April""",
+🔖 VO!CE : Emma 2023""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
@@ -378,51 +378,6 @@ async def ahmad(client: Client, message: Message):
             [
                 InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
             ],
-            ]
-        ),
-    )
-def get_file_id(msg: Message):
-    if msg.media:
-        for message_type in (
-            "photo",
-            "animation",
-            "audio",
-            "document",
-            "video",
-            "video_note",
-            "voice",
-            # "contact",
-            # "dice",
-            # "poll",
-            # "location",
-            # "venue",
-            "sticker",
-        ):
-            obj = getattr(msg, message_type)
-            if obj:
-                setattr(obj, "message_type", message_type)
-                return obj
-
-
-
-@app.on_message(
-    command(["غنيلي9"])
-    & filters.group
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    voice = await client.get_channel(-1001753699055)
-    async for voice in client.iter_channel_voice(-1001753699055, limit=1):
-                    await message.reply_voice(voice.file_id,       caption=f"""- Be Cool Nerves Create : @sspaa 🌵.""", 
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"tg://user?id=5946704196")
-                ],[
-                    InlineKeyboardButton(
-                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
-                ],
             ]
         ),
     )
