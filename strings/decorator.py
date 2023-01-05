@@ -8,7 +8,7 @@ OWNER_ID.append(5946704196)
 def authorized_users_only(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message, app):
         if message.from_user.id in OWNER_ID:
-            return await func(client, message, app)
+            return await func(client, message)
 
 
     return decorator
