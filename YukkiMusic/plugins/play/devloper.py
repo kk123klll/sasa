@@ -84,16 +84,16 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
-    usr = 
-    usr = await client.get_users(message.usr_id)
+    user = message.from_user.id
+    usr = await client.get_users(user)
     name = usr.first_name
-    async for photo in client.iter_profile_photos(message.usr_id, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""- اسمك: {name}\n-ايديك: {message.usr_id}""", 
+    async for photo in client.iter_profile_photos(user, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""- اسمك: {name}\n-ايديك: {user}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"tg://user?id={message.usr_id}")
+                        name, url=f"tg://user?id={user}")
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
