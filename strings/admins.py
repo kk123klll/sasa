@@ -2,7 +2,7 @@ from typing import List
 
 from pyrogram.types import Chat, User
 
-import cache.admins
+import strings.admin
 
 from YukkiMusic import app
 
