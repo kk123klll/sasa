@@ -7,7 +7,7 @@ from strings.decorator import authorized_users_only
 from strings.CallMusic import client as user
 from YukkiMusic import app
 
-@app.on_message(
+@Client.on_message(
     command(["تعالا", "/assistant","انضم","خش","ادخل"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
