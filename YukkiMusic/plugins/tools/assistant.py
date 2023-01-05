@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from strings.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
 from strings.decorators import authorized_users_only
-from callsmusic.callsmusic import client as user
+from strings.callsmusic import client as user
 
 
 @Client.on_message(
