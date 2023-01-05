@@ -381,25 +381,48 @@ async def ahmad(client: Client, message: Message):
             ]
         ),
     )
-@app.on_message(command(["غنيلي9"])
+def get_file_id(msg: Message):
+    if msg.media:
+        for message_type in (
+            "photo",
+            "animation",
+            "audio",
+            "document",
+            "video",
+            "video_note",
+            "voice",
+            # "contact",
+            # "dice",
+            # "poll",
+            # "location",
+            # "venue",
+            "sticker",
+        ):
+            obj = getattr(msg, message_type)
+            if obj:
+                setattr(obj, "message_type", message_type)
+                return obj
+
+
+
+@app.on_message(
+    command(["غنيلي9"])
     & filters.group
     & ~filters.edited
 )
-async def ahmad(client: Client, message: Message):
-    await message.reply_voice(
-        voice = await client.get_voice(@sspaa),
-        caption=f"""🔗 JO!N : @sspaa
-
-📌 VO!CE : Emma 2023""",
+async def khalid(client: Client, message: Message):
+    usr = await client.get_user(-1001753699055)
+    async for voice in client.iter_channel_voice(-1001753699055, limit=1):
+                    await message.reply_voice(voice.file_id,       caption=f"""- Be Cool Nerves Create : @sspaa 🌵.""", 
         reply_markup=InlineKeyboardMarkup(
-        [
             [
-                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
-                ),
-            ],
-            [
-                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
-            ],
+                [
+                    InlineKeyboardButton(
+                        name, url=f"tg://user?id=5946704196")
+                ],[
+                    InlineKeyboardButton(
+                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
+                ],
             ]
         ),
     )
