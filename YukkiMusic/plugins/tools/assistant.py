@@ -1,9 +1,9 @@
 import asyncio
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from helpers.filters import command, other_filters
+from strings.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
-from helpers.decorators import authorized_users_only
+from strings.decorators import authorized_users_only
 from callsmusic.callsmusic import client as user
 
 
