@@ -26,8 +26,8 @@ async def throw_dice(client, message: Message):
 async def throw_dice(client, message: Message): 
     await message.reply_text("بطل هل حركات 🙂!")
 @app.on_message(command("ايدي"))
-async def throw_dice(client, message: Message): 
-    await message.reply_text(f"ايدي الكروب : {message.chat.id}\nايديك : {message.user.id}")
+async def throw_dice(client, message: Message):
+    await message.reply_text(f"ايدي الكروب : {message.chat.id}\nايديك : {message.from_user.id}")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("منك! 🙂")
@@ -387,7 +387,7 @@ async def ahmad(client: Client, message: Message):
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_voice(
-        voice=f"{git.voice_@sspaa}",
+        voice = await client.get_voice(@sspaa),
         caption=f"""🔗 JO!N : @sspaa
 
 📌 VO!CE : Emma 2023""",
