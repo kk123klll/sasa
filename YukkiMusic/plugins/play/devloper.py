@@ -64,13 +64,14 @@ def get_file_id(msg: Message):
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     usr = await client.get_users(5946704196)
     name = usr.first_name
+    bio = user.first_bio
     async for photo in client.iter_profile_photos(5946704196, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""- Be Cool Nerves Create : @sspaa 🌵.""", 
+                    await message.reply_photo(photo.file_id,       caption=f"""{bio}""", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        name, url=f"tg://user?id=5946704196")
+                        name, url="tg://user?id=5946704196")
                 ],[
                     InlineKeyboardButton(
                         "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
