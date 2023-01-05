@@ -11,6 +11,7 @@ from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP, OWNER_ID
 from YukkiMusic import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from YukkiMusic.misc import SUDOERS
+from YukkiMusic.utils.decorators import AdminRightsCheck
 
 import re
 import sys
@@ -83,6 +84,7 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     & filters.group
     & ~filters.edited
 )
+@AdminRightsCheck
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     user = message.from_user.id
     usr = await client.get_users(user)
