@@ -5,9 +5,9 @@ from strings.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
 from strings.decorator import authorized_users_only
 from strings.CallMusic import client as user
+from YukkiMusic import app
 
-
-@Client.on_message(
+@app.on_message(
     command(["تعالا", "/assistant","انضم","خش","ادخل"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
