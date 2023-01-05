@@ -4,6 +4,8 @@ from pyrogram.types import Chat, User
 
 import cache.admins
 
+from YukkiMusic import app
+
 async def get_administrators(chat: Chat) -> List[User]:
 
     get = cache.admins.get(chat.id)
