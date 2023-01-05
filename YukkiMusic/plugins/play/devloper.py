@@ -83,7 +83,6 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     command(["ايدي"])
     & filters.group
     & ~filters.edited
-    & -filters.admin
 )
 async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
     user = message.from_user.id
