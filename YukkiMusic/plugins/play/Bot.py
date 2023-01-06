@@ -91,7 +91,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(5769323463, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"اسمي {MUSIC_BOT_NAME} عمري .", 
+                    await message.reply_photo(photo.file_id,       caption=f"- هلا عمري {message.from_user.mention}\n- اسمي ايما ، أضغط على الزر لتشوف اوامري.", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -101,7 +101,7 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                      "- مطور السورس .", url=f"https://t.me/ccbee") 
+                      "- الأوامر .", url=f"https://t.me/AprilMubot?start=help") 
 
                 ],[
 
