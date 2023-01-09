@@ -79,27 +79,3 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
             ]
         ),
     )
-@app.on_message(
-    command(["ايدي"])
-    & filters.group
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = None):
-    user = message.from_user.id
-    usr = await client.get_users(user)
-    nam = message.from_user.mention
-    name = usr.first_name
-    async for photo in client.iter_profile_photos(user, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""⌯︙شهل صورة ؟\n⌯︙اسمك : {nam}\n⌯︙ايديك : {user}""", 
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"tg://user?id={user}")
-                ],[
-                    InlineKeyboardButton(
-                        "‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true"),
-                ],
-            ]
-        ),
-    )
