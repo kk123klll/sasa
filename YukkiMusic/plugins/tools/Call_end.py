@@ -10,18 +10,27 @@ from YukkiMusic import app
 
 @app.on_message(filters.voice_chat_started)
 async def babloo(client: Client, message: Message): 
-      Startt = "- صعدوا نسمع أغاني 🥲"
+      Startt = "- صعدوا نسمع أغاني 🫂"
       await message.reply_text(Startt)
 
 @app.on_message(filters.voice_chat_ended)
 async def bablo(client: Client, message: Message): 
-      Enddd = "- أصلاً مليت 🙂"
+      Enddd = "- أصلاً مليت ☹"
       await message.reply_text(Enddd)
 
       
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
+@app.on_message(command("اشتقت"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("تشتقلك مكة يارب .")
+@app.on_message(command("ملل"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("اممممم ، طيب لا اتضوجنا ممك؟")
+@app.on_message(command("هايز"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("هايزععع ، شد تمك شوي 🥲")
 @app.on_message(command("خاصك"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("بطل هل حركات 🙂!")
