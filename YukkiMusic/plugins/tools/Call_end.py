@@ -27,7 +27,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("تشتقلك مكة يارب .")
 @app.on_message(command("ملل"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("اممممم ، طيب لا اتضوجنا ممك؟")
+    await message.reply_text("اممممم ، طيب لا اتضوجنا ممكن؟")
 @app.on_message(command("هايز"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("هايزععع ، شد تمك شوي 🥲")
