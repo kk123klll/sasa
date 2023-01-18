@@ -58,7 +58,7 @@ def get_file_id(msg: Message):
 
 
 @app.on_message(
-    command(["المطور","المبرمج","مطور"])
+    command(["المطور","المبرمج","مطور","احمد"])
     & filters.group
     & ~filters.edited
 )
@@ -66,7 +66,7 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     usr = await client.get_users(5946704196)
     name = usr.first_name
     async for photo in client.iter_profile_photos(5946704196, limit=1):
-                    await message.reply_photo(photo.file_id, 
+                    await message.reply_photo(photo.file_id,   caption="- BIO: 「Be Cool Nerves Create : @sspaa」.\n\n- UserName: 「@ccbee」.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
