@@ -1,8 +1,8 @@
-import telepot 
+import telebot 
 from config import BOT_TOKEN
 from telepot.loop import MessageLoop 
 from YukkiMusic import app
-bot=telepot.Bot('BOT_TOKEN')
+bot=telebot.Bot('BOT_TOKEN')
 
 def action(msg): 
 
