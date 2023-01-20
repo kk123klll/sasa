@@ -19,7 +19,7 @@ async def bablo(client: Client, message: Message):
       await message.reply_text(Enddd)
 
 # تعريف دالة للتعامل مع الطلبات الإذاعية
-@app.on_message(commands=['invite'])
+@app.on_message(command=['/invite'])
 def invite_friend(message):
     chat_id = message.chat.id
     # التعامل مع رسالة الطرف الثاني
