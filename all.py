@@ -4,7 +4,7 @@ import telebot
 bot = telebot.TeleBot("5769323463:AAFKnPLkoEUTeKh4zN_D4nUySLP0oL32I-0")
 
 # معرف المجموعة الرسومية
-chat_id = 
+chat_id = message.chat.id
 
 # ارسال التاك لاعضاء المجموعة الرسومية
 def tag_all(message):
