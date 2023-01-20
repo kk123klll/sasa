@@ -1,5 +1,7 @@
 import telebot
-
+import os
+import re
+import sys
 # تعين البوت
 bot = telebot.TeleBot("5769323463:AAFMHSF4rQ3sfMJarIQa_eOkBntQGIo5hJI")
 
