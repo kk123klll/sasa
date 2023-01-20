@@ -26,8 +26,7 @@ def invite_friend(message):
     friend = message.text[8:] 
     bot.send_message(chat_id, 'تم ارسال دعوة الى' + friend + 'للانضمام للمجموعة!')
     bot.invite_chat_member(chat_id, friend)
-
-bot.polling()
+    
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
