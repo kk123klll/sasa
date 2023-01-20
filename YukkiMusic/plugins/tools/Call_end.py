@@ -18,7 +18,16 @@ async def bablo(client: Client, message: Message):
       Enddd = "- أصلاً مليت ☹"
       await message.reply_text(Enddd)
 
-      
+# تعريف دالة للتعامل مع الطلبات الإذاعية
+@app.on_message(commands=['invite'])
+def invite_friend(message):
+    chat_id = message.chat.id
+    # التعامل مع رسالة الطرف الثاني
+    friend = message.text[8:] 
+    bot.send_message(chat_id, 'تم ارسال دعوة الى' + friend + 'للانضمام للمجموعة!')
+    bot.invite_chat_member(chat_id, friend)
+
+bot.polling()
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
