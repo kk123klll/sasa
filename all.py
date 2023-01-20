@@ -1,7 +1,7 @@
 import telebot
 
 # تعين البوت
-bot = telebot.TeleBot("5769323463:AAFKnPLkoEUTeKh4zN_D4nUySLP0oL32I-0")
+bot = telebot.TeleBot("5769323463:AAFMHSF4rQ3sfMJarIQa_eOkBntQGIo5hJI")
 
 # معرف المجموعة الرسومية
 chat_id = message.chat.id
