@@ -61,7 +61,7 @@ def get_file_id(msg: Message):
 )
 async def madison(client: Client, message: Message):
     if message.from_user.id in SUDOERS:
-        await message.reply_text("• رتبتك هي : مطور ريسكس")
+        await message.reply_text("• رتبتك هي : مطور ايما")
     else:
         await message.reply_text("• رتبتك هي : عضو")
         
