@@ -1,14 +1,13 @@
 aiofiles
 aiohttp
 asyncio
-telebot
 dnspython
 ffmpeg-python
 gitpython
 hachoir
 heroku3
-LyricsGenius
-motor==3.0.0
+lyricsgenius
+motor
 pillow
 psutil
 py-tgcalls==0.8.6
@@ -17,7 +16,6 @@ pyrogram==1.4.16
 python-dotenv
 pyyaml==5.3.1
 requests
-wget
 speedtest-cli
 spotipy
 tgcrypto
