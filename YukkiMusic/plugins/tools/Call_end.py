@@ -33,7 +33,7 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("خاصك"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("بطل هل حركات 🙂!")
-@app.on_message(command(".قصفي"))
+@app.on_message(command(".سليهم"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("https://t.me/SS_WN/2")
 @app.on_message(command("بالناقص"))
