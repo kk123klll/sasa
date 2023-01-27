@@ -135,8 +135,8 @@ async def throw_dice(client, message: Message):
     & ~filters.edited
 )
 async def ahmad(client: Client, message: Message):
-    await message.reply_gif(
-        gif="https://te.legra.ph/file/dbcf6af7538952498c41c.mp4",
+    await message.reply_video(
+        video="https://te.legra.ph/file/dbcf6af7538952498c41c.mp4",
         caption=f"""- فرررررررطت ضحك قمنقلععع 😂""",
         reply_markup=InlineKeyboardMarkup(
         [
