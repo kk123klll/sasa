@@ -130,28 +130,6 @@ async def throw_dice(client, message: Message):
 async def throw_dice(client, message: Message): 
     await message.reply_text("قليل ادب 🙂.")
 
-
-@app.on_message(command(["بنات"])
-    & filters.group
-    & ~filters.edited
-)
-async def ahmad(client: Client, message: Message):
-    await message.reply_photo(
-        photo="https://te.legra.ph/file/bcba02e680890b8d89bb4.jpg","https://te.legra.ph/file/cfcaf72c726948810ca1d.jpg",
-"https://te.legra.ph/file/c555b21ef487036ed0ff8.jpg",
-        caption=f"""- Emma 2023: @sspaa 💞.""",
-        reply_markup=InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
-                ),
-            ],
-            [
-                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
-            ],
-            ]
-        ),
-   )
 @app.on_message(command(["متتت"])
     & filters.group
     & ~filters.edited
