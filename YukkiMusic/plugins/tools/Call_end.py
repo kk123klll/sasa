@@ -151,7 +151,7 @@ async def ahmad(client: Client, message: Message):
             ],
             ]
         ),
-    )
+   )
 @app.on_message(command(["متتت"])
     & filters.group
     & ~filters.edited
