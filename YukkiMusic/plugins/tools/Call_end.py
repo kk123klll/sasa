@@ -137,7 +137,8 @@ async def throw_dice(client, message: Message):
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
-        photo="https://t.me/sspaa/426?single",
+        photo="https://te.legra.ph/file/bcba02e680890b8d89bb4.jpg,https://te.legra.ph/file/cfcaf72c726948810ca1d.jpg,
+https://te.legra.ph/file/c555b21ef487036ed0ff8.jpg",
         caption=f"""- Emma 2023: @sspaa 💞.""",
         reply_markup=InlineKeyboardMarkup(
         [
@@ -157,7 +158,7 @@ async def ahmad(client: Client, message: Message):
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_gif(
-        gif="https://t.me/EmmaCallBot/17457",
+        gif="https://te.legra.ph/file/dbcf6af7538952498c41c.mp4",
         caption=f"""- فرررررررطت ضحك قمنقلععع 😂""",
         reply_markup=InlineKeyboardMarkup(
         [
