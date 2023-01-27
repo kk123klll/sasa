@@ -156,7 +156,7 @@ async def ahmad(client: Client, message: Message):
     & ~filters.edited
 )
 async def ahmad(client: Client, message: Message):
-    await message.reply_photo(
+    await message.reply_gif(
         gif="https://t.me/EmmaCallBot/17457",
         caption=f"""- فرررررررطت ضحك قمنقلععع 😂""",
         reply_markup=InlineKeyboardMarkup(
