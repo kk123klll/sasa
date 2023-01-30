@@ -10,12 +10,12 @@ from YukkiMusic import app
 
 @app.on_message(filters.voice_chat_started)
 async def babloo(client: Client, message: Message): 
-      Startt = "- صعدوا نسمع أغاني 🫂"
+      Startt = "بدأت المحادثة الصوتية 🔍"
       await message.reply_text(Startt)
 
 @app.on_message(filters.voice_chat_ended)
 async def bablo(client: Client, message: Message): 
-      Enddd = "- أصلاً مليت ☹"
+      Enddd = "- تم انهاء المحادثه الصوتية 🤝"
       await message.reply_text(Enddd)
     
 @app.on_message(command("ايما"))
@@ -102,9 +102,9 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("كيفكم"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("بخير وانت ؟")
-@app.on_message(command("محمد"))
+@app.on_message(command("احا"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("عليه أفضل الصلاة والسلام")
+    await message.reply_text("احاااات يعم 🤌")
 @app.on_message(command("خاص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("واللهي يبتاع الخاص قلبي تعب وعقلي تعب وأي ياي ياي .")
