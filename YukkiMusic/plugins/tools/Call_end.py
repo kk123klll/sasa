@@ -21,6 +21,12 @@ async def bablo(client: Client, message: Message):
 @app.on_message(command("ايما"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
+@app.on_message(command("هلا"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("هلا فيك/ي عمري .")
+@app.on_message(command("عرفونا"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("ايما ، ع22 مغنية ، حمصية 🥲🤌")
 @app.on_message(command("اشتقت"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("تشتقلك مكة يارب .")
@@ -71,7 +77,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("الله معك 🤝")
 @app.on_message(command("مرحبا"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("مرحبتين 🤝")
+    await message.reply_text("مراحب 🤝")
 @app.on_message(command("دوم"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("تسلم/ي")
