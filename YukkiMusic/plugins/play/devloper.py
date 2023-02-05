@@ -66,7 +66,7 @@ async def khalid(client: Client, message: Message, OWNER: Union[bool, int] = Non
     usr = await client.get_users(5946704196)
     name = usr.first_name
     async for photo in client.iter_profile_photos(5946704196, limit=1):
-                    await message.reply_photo(photo.file_id,   caption="- BIO: - 𝑡𝑟𝑢𝑠𝑡 𝑖𝑛 𝑔𝑜𝑑 𝑠𝑢𝑐𝑐𝑒𝑠𝑠 : @sspaa\n\n- UserName: 「@ccbee」.",
+                    await message.reply_photo(photo.file_id,   caption="- Join To Channel : @sspaa .",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
