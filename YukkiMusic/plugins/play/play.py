@@ -40,7 +40,7 @@ force_btn = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(   
-              text=f"اضغط للاشتراك", url=f"https://t.me/sspaa",)                        
+              text=f"اضغط للاشتراك", url=f"https://t.me/zzsvv",)                        
         ],        
     ]
 )
@@ -48,7 +48,7 @@ async def check_is_joined(message, Message, client):
     try:
         userid = message.from_user.id
         user_name = message.from_user.first_name
-        status = await app.get_chat_member("sspaa", userid)
+        status = await app.get_chat_member("zzsvv", userid)
         return True
     except Exception:
         await message.reply_text(f'⌯︙عذࢪاَ عزيزي ↫ {user_name} \n⌯︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ',reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
@@ -65,7 +65,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["تشغيل","ايما شغلي"])
+    command(["تشغيل","شغل"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
