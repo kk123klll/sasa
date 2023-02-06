@@ -10,15 +10,15 @@ from YukkiMusic import app
 
 @app.on_message(filters.voice_chat_started)
 async def babloo(client: Client, message: Message): 
-      Startt = "بدأت المحادثة الصوتية 🔍"
+      Startt = "بدأت المحادثة الصوتية 👤"
       await message.reply_text(Startt)
 
 @app.on_message(filters.voice_chat_ended)
 async def bablo(client: Client, message: Message): 
-      Enddd = "- تم انهاء المحادثه الصوتية 🤝"
+      Enddd = "- تم انهاء المحادثه الصوتية 🙁"
       await message.reply_text(Enddd)
     
-@app.on_message(command("ايما"))
+@app.on_message(command("ليز"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("عيونها")
 @app.on_message(command("هلا"))
@@ -37,11 +37,11 @@ async def ahmad(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/AprilMubot?startgroup=true",
+                InlineKeyboardButton("‹ ضيفني لكروبك ›", url=f"https://t.me/ZXXCAQPBOT?startgroup=true",
                 ),
             ],
             [
-                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/aprilMubot"),
+                InlineKeyboardButton("‹ دخول البوت ›", url=f"https://t.me/ZXXCAQPBOT"),
             ],
             ]
         ),
