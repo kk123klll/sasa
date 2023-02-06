@@ -12,7 +12,7 @@ from pyrogram.types import (InlineKeyboardButton,
 )
 async def ahmad(client: Client, message: Message):
     await message.reply_photo(
-        photo="https://telegra.ph/file/04a69ce280b397914d5f7.jpg",
+        photo="https://telegra.ph/file/94f1316d4fc5546bb9c4c.jpg",
         caption=f"""𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 [liz](https://t.me/zzsvv) 𝒎𝒖𝒔𝒊𝒄 𝒔𝒐𝒖𝒓𝒄𝒆, 𝒇𝒐𝒍𝒍𝒐𝒘 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒖𝒑𝒅𝒂𝒕𝒆𝒔 𝒃𝒚 𝒑𝒓𝒆𝒔𝒔𝒊𝒏𝒈 𝒕𝒉𝒆 𝒄𝒉𝒂𝒏𝒏𝒆𝒍 𝒃𝒖𝒕𝒕𝒐𝒏, 𝒌𝒊𝒏𝒅𝒍𝒚""",
         reply_markup=InlineKeyboardMarkup(
         [
