@@ -57,15 +57,15 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("sspaa")
-                await self.one.join_chat("sspaa")
-                await self.one.join_chat("sspaa")
+                await self.one.join_chat("zzSvv")
+                await self.one.join_chat("zzsvv")
+                await self.one.join_chat("zzsvv")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "مساعد ليز ١"
                 )
             except:
                 LOGGER(__name__).error(
@@ -88,15 +88,15 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("sspaa")
-                await self.two.join_chat("sspaa")
-                await self.two.join_chat("sspaa")
+                await self.two.join_chat("zzsvv")
+                await self.two.join_chat("zzsvv")
+                await self.two.join_chat("zzsvv")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "مساعد ليز ٢"
                 )
             except:
                 LOGGER(__name__).error(
