@@ -1,7 +1,7 @@
 {
-    "name": "Liz Music Bot",
+    "name": "Yukki Music Bot",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/94f1316d4fc5546bb9c4c.jpg",
+    "logo": "https://telegra.ph/file/c0e014ff34f34d1056627.png",
     "keywords": [
     "python3",
     "telegram",
@@ -40,7 +40,7 @@
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "Liz Music",
+        "value": "Liz music",
         "required": true
       },
       "OWNER_ID": {
@@ -49,11 +49,6 @@
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
-        "required": true
-      },
-      "STRING_SESSION2": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
@@ -70,7 +65,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1001625006621",
+        "value": "-885282998",
         "required": true
       },
       "UPSTREAM_REPO": {
@@ -98,7 +93,7 @@
       "formation": {
           "worker": {
               "quantity": 1,
-              "size": "eco"
+              "size": "free"
           }
       }
   }
