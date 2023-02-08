@@ -75,7 +75,7 @@ def get_file_id(msg: Message):
 
 @app.on_message(
 
-    command(["بوت","ليز"])
+    command(["بوت"])
 
     & filters.group
 
