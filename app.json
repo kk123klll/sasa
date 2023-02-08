@@ -23,11 +23,6 @@
         "value": "0294c44762f0fae24ea4e6ac9c5f7212",
         "required": true
       },
-      "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
-        "value": "True",
-        "required": false
-      },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
         "value": "",
@@ -35,7 +30,7 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://abhi99:abhi99@cluster0.hjh7gnv.mongodb.net/?retryWrites=true&w=majority",
+        "value": "mongodb+srv://lizmusic:lizmusicl@cluster0.qf4jykk.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
@@ -60,7 +55,7 @@
       },
       "HEROKU_APP_NAME": {
         "description": "Your heroku app/bot's name",
-        "value": "xoonaya",
+        "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {
