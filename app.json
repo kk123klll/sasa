@@ -30,7 +30,7 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://lizmusic:lizmusicl@cluster0.qf4jykk.mongodb.net/?retryWrites=true&w=majority",
+        "value": "mongodb+srv://Lizbot:abdulhadi31@cluster0.nzznuzq.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
@@ -44,6 +44,11 @@
         "required": true
       },
       "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": true
+      }, 
+      "STRING_SESSION2": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
