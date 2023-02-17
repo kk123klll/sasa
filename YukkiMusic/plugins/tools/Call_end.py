@@ -15,7 +15,7 @@ async def babloo(client: Client, message: Message):
 
 @app.on_message(filters.voice_chat_ended)
 async def bablo(client: Client, message: Message): 
-      Enddd = "- تم انهاء المحادثه الصوتية 🙁"
+      Enddd = "- تم انهاء المحادثه الصوتية"
       await message.reply_text(Enddd)
     
 @app.on_message(command("ليز"))
@@ -24,6 +24,12 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("هلا"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("هلا فيك/ي عمري .")
+@app.on_message(command("شونك"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("بخير وانت/ي")
+@app.on_message(command("شونج"))
+async def throw_dice(client, message: Message): 
+    await message.reply_text("تمام يروحي وانت/ي")
 
 
 @app.on_message(command(["عتكططجنهعة"])
