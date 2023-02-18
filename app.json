@@ -75,7 +75,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/xiipq/llomn1",
+        "value": "https://github.com/xiipq/okhff",
         "required": true
       },
       "UPSTREAM_BRANCH": {
