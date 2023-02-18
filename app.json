@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "13798825",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "0294c44762f0fae24ea4e6ac9c5f7212",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -35,7 +35,7 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://abhi99:abhi99@cluster0.hjh7gnv.mongodb.net/?retryWrites=true&w=majority",
+        "value": "mongodb+srv://Lizbot:abdulhadi31@cluster0.nzznuzq.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
@@ -52,7 +52,7 @@
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
-          },
+      },
       "STRING_SESSION2": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
@@ -70,12 +70,12 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1001625006621",
+        "value": "-885282998",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/xiipq/okhff",
+        "value": "https://github.com/xiipq/llomn1",
         "required": true
       },
       "UPSTREAM_BRANCH": {
