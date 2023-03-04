@@ -65,7 +65,7 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "مساعد ليز ١"
+                    config.LOG_GROUP_ID, "بدء"
                 )
             except:
                 LOGGER(__name__).error(
@@ -96,7 +96,7 @@ class Userbot(Client):
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "مساعد ليز ٢"
+                    config.LOG_GROUP_ID, "بداء"
                 )
             except:
                 LOGGER(__name__).error(
@@ -119,15 +119,15 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("sspaa")
-                await self.three.join_chat("sspaa")
-                await self.three.join_chat("sspaa")
+                await self.three.join_chat("zzsvv")
+                await self.three.join_chat("zzsvv")
+                await self.three.join_chat("zzsvv")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "بداء"
                 )
             except:
                 LOGGER(__name__).error(
