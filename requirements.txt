@@ -1,16 +1,16 @@
 aiofiles
 aiohttp
 asyncio
-dnspython
+git+https://github.com/rthalley/dnspython.git
+heroku3
 ffmpeg-python
 gitpython
 hachoir
-heroku3
 lyricsgenius
 motor==3.0.0
-pillow
+git+https://github.com/python-pillow/Pillow.git
 psutil
-py-tgcalls==0.8.6
+git+https://github.com/pytgcalls/pytgcalls
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
@@ -21,4 +21,4 @@ spotipy
 tgcrypto
 youtube-search
 youtube-search-python
-yt-dlp
+git+https://github.com/yt-dlp/yt-dlp
