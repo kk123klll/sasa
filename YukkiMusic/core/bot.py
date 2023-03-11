@@ -44,13 +44,14 @@ class YukkiBot(Client):
         try:
             await self.set_bot_commands([
     BotCommand("start", "رسالة البدء"),
-    BotCommand("play", "لتشغيل اغنية في المجموعة"),
-    BotCommand("skip", "لتخطي الأغنية الحالية"),
-    BotCommand("mute", "لكتم الأغنية"),
-    BotCommand("unmute", "لألغاء كتم الأغنية"),
-    BotCommand("stop", "لأنهاء التشغيل"),
-    BotCommand("sudolist", "لطلب مساعدة المطور"),
-    BotCommand("settings", "لعرض أعدادات البوت")])
+    BotCommand("play", "لتشغيل أغنية في المكالمة"),
+    BotCommand("vplay", "لتشغيل فيديو في المكالمة"),
+    BotCommand("skip", "تخطي الأغنية الحالية"),
+    BotCommand("mute", "كتم الأغنية"),
+    BotCommand("unmute", "الغاء كتم الأغنية"),
+    BotCommand("stop", "انهاء التشغيل"),
+    BotCommand("sudolist", "طلب مساعدة المطور"),
+    BotCommand("settings", "عرض أعدادات البوت")])
         except:
             pass
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
