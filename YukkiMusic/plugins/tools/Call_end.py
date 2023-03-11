@@ -56,7 +56,7 @@ def get_id(msg: Message):
               
 @app.on_message(command("ليز"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text(["عيونها","روحها","قلبها"])
+    await message.reply_text("عيونها")
 @app.on_message(command(["مساؤ","صباحو"]))
 async def throw_dice(client, message: Message): 
     await message.reply_text("فل عمري .")
@@ -87,9 +87,9 @@ async def throw_dice(client, message: Message):
 @app.on_message(command("خاصك"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("بطل هل حركات 🙂!")
-@app.on_message(command(".rawann"))
+@app.on_message(command("برود"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("https://t.me/SS_WN/2")
+    await message.reply_text("https://t.me/zzSvv")
 @app.on_message(command("بالناقص"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("منك! 🙂")
@@ -191,7 +191,7 @@ async def throw_dice(client, message: Message):
     await message.reply_text("قليل ادب 🙂.")
 @app.on_message(command("قناتي"))
 async def throw_dice(client, message: Message): 
-    await message.reply_text("@zzsvv,@wopictures")
+    await message.reply_text("@zzsvv")
 @app.on_message(command(["متتت"])
     & filters.group
     & ~filters.edited
