@@ -30,9 +30,9 @@ def start_pannel(_):
 
             InlineKeyboardButton(
 
-                text="‹ برود ›",
+                text="‹ لتنصيب بوت مماثل ›",
 
-                url=f"https://t.me/zzSvv",
+                url=f"https://t.me/AAAQQQ",
 
             ),
 
