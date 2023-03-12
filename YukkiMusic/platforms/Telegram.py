@@ -128,7 +128,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 Cancel Downloading",
+                                text="🚦 الغاء التنزيل",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -147,14 +147,14 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} Telegram Media Downloader**
+**{MUSIC_BOT_NAME} جارِ تحميل الملف**
 
-**Total FileSize:** {total_size}
-**Completed:** {completed_size} 
-**Percentage:** {percentage[:5]}%
+**حجم الملف:** {total_size}
+**المتبقي:** {completed_size} 
+**نسبة التحميل:** {percentage[:5]}%
 
-**Speed:** {speed}/s
-**ETA:** {eta}"""
+**السرعة:** {speed}/s
+**الوقت المتبقي:** {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
                     except:
@@ -173,7 +173,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "Successfully Downloaded.. Processing file now"
+                    "تم التنزيل بنجاح...جار تشغيل الملف"
                 )
                 downloader.pop(message.message_id)
             except:
