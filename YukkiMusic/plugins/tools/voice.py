@@ -40,7 +40,7 @@ def transcribe_audio(audio_file_path):
 @app.on_message(filters.text & filters.group , group =72)
 def v(app,message):
     
-    if (message.text == "وش يقول؟" or message.text == "what?") and  message.reply_to_message.voice:
+    if (message.text == "وش يقول" or message.text == "what?") and  message.reply_to_message.voice:
         app.download_media(message.reply_to_message.voice.file_id,file_name="a.ogg")
         what = transcribe_audio("downloads/a.ogg")
         if what:
