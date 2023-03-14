@@ -54,4 +54,3 @@ def get_id(msg: Message):
                 setattr(obj, "message_type", message_type)
                 return obj
     )       
-    
