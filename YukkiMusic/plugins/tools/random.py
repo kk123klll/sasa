@@ -59,9 +59,9 @@ async def musicme(client, message):
        if message.chat.id in disable:
          return await message.reply_text("**- تم تعطيل امر غنيلي من قبل المشرفين**")
        if message.chat.id not in disable:
-         rl = random.randint(13,136)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_voice(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(4,103)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_voice(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
          
 
 
@@ -98,51 +98,51 @@ async def AvtarT(client, message):
          disable_A.remove(message.chat.id)
          await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تفعيل اوامر الافتارات**")         
          
-@app.on_message(filters.regex("^افتار عيال$") & filters.group & ~filters.edited)
-async def ava(client, message):
-       if message.chat.id in disable_A:
-         return await message.reply_text("**- تم تعطيل امر افتار عيال من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
-       if message.chat.id not in disable_A:
-         rl = random.randint(188,578)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
-         
-@app.on_message(filters.regex("^افتارات عيال$") & filters.group & ~filters.edited)
-async def ava(client, message):
-       if message.chat.id in disable_A:
-         return await message.reply_text("**- تم تعطيل امر افتارات عيال من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
-       if message.chat.id not in disable_A:
-         rl = random.randint(188,578)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
-         
-         
 @app.on_message(filters.regex("^افتار بنات$") & filters.group & ~filters.edited)
 async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتار بنات من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(583,1121)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(104,132)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
          
 @app.on_message(filters.regex("^افتارات بنات$") & filters.group & ~filters.edited)
 async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات بنات من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(583,1121)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(104,132)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
+         
+         
+@app.on_message(filters.regex("^افتار ولد$") & filters.group & ~filters.edited)
+async def ava(client, message):
+       if message.chat.id in disable_A:
+         return await message.reply_text("**- تم تعطيل امر افتار ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
+       if message.chat.id not in disable_A:
+         rl = random.randint(135,173)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
+         
+@app.on_message(filters.regex("^افتارات ولد$") & filters.group & ~filters.edited)
+async def ava(client, message):
+       if message.chat.id in disable_A:
+         return await message.reply_text("**- تم تعطيل امر افتارات ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
+       if message.chat.id not in disable_A:
+         rl = random.randint(135,173)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
          
 @app.on_message(filters.regex("^افتارات مكس$") & filters.group & ~filters.edited)
 async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات مكس من قبل المشرفين**")
        if message.chat.id not in disable_A:
-         rl = random.randint(583,1121)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(175,196)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
          
 
 
@@ -186,8 +186,8 @@ async def qw2(client,message):
        if message.chat.id in disable_G:
          return await message.reply_text("**- تم تعطيل امر الاقتباسات من قبل المشرفين**")
        if message.chat.id not in disable_G:
-         rl = random.randint(1824,3267)
-         url = requests.get(f"https://t.me/Juuut/{rl}").text
+         rl = random.randint(197,255)
+         url = requests.get(f"https://t.me/NNNNNGN/{rl}").text
          caption = re.findall(r'<meta property="og:description" content="(.*)">',str(url))
          await message.reply_text("-›" + str(caption[0]))
 
