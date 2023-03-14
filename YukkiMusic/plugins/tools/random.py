@@ -201,7 +201,7 @@ flex = {}
 chat_watcher_group = 3
          
          
-@app.on_message(filters.command("تعطيل الهيدرات", [".", ""]) & filters.group)
+@app.on_message(filters.command("تعطيل شعر", [".", ""]) & filters.group)
 async def hy1(client, message):      
        a = await app.get_chat_member(message.chat.id, message.from_user.id)
        if message.chat.id in disable_h:
@@ -212,10 +212,10 @@ async def hy1(client, message):
         
        if a.can_manage_chat:
          disable_h.append(message.chat.id)
-         await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تعطيل امر هيدرات**") 
+         await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تعطيل امر شعر**") 
          
          
-@app.on_message(filters.command("تفعيل الهيدرات", [".", ""]) & filters.group)
+@app.on_message(filters.command("تفعيل شعر", [".", ""]) & filters.group)
 async def hy(client, message):      
        a = await app.get_chat_member(message.chat.id, message.from_user.id)
        if message.chat.id not in disable_h:
@@ -226,25 +226,15 @@ async def hy(client, message):
         
        if a.can_manage_chat:
          disable_h.remove(message.chat.id)
-         await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تفعيل امر هيدرات ~ هيدر**") 
+         await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تفعيل امر شعر**") 
 
 
 
-@app.on_message(filters.regex("^هيدرات$") & filters.group & ~filters.edited)
+@app.on_message(filters.regex("^شعر$") & filters.group & ~filters.edited)
 async def hyder(client, message):
        if message.chat.id in disable_h:
-         return await message.reply_text("**- تم تعطيل امر هيدرات من قبل المشرفين\n- للتفعيل اكتب تفعيل الهيدرات**")
+         return await message.reply_text("**- تم تعطيل امر شعر من قبل المشرفين\n- للتفعيل اكتب تفعيل شعر**")
        if message.chat.id not in disable_h:
-         rl = random.randint(1331,1795)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
-
-
-@app.on_message(filters.regex("^هيدرات$") & filters.group & ~filters.edited)
-async def hyder1(client, message):
-       if message.chat.id in disable_h:
-         return await message.reply_text("**- تم تعطيل امر هيدرات من قبل المشرفين\n- للتفعيل اكتب تفعيل الهيدرات**")
-       if message.chat.id not in disable_h:
-         rl = random.randint(1331,1795)
-         url = f"https://t.me/JuuuT/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(256,311)
+         url = f"https://t.me/NNNNNGN/{rl}"
+         await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
