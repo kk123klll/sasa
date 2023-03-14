@@ -57,7 +57,7 @@ def get_id(msg: Message):
 @app.on_message(command("قناتي"))
 async def throw_dice(client, message: Message): 
     await message.reply_text("@zzsvv")
-@app.on_message(command(["متتت"])
+@app.on_message(command(["مظزلتغىونلىتتت"])
     & filters.group
     & ~filters.edited
 )
