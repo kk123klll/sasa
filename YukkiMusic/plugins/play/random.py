@@ -54,7 +54,7 @@ async def enablelink(client, message):
          disable.remove(message.chat.id)
          await message.reply_text(f"- ابشر عيني {message.from_user.mention}\n**- تم تفعيل امر غنيلي**")         
          
-@app.on_message(filters.regex("^غنيلي$","^ليز غني$") & filters.group & ~filters.edited)
+@app.on_message(filters.regex("^غنيلي$","^liz$","^ليز غني$") & filters.group & ~filters.edited)
 async def musicme(client, message):
        if message.chat.id in disable:
          return await message.reply_text("**- تم تعطيل امر غنيلي من قبل المشرفين**")
