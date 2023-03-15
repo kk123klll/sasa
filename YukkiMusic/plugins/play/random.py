@@ -240,7 +240,7 @@ async def hyder(client, message):
          await message.reply_photo(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
         
         
-      @app.on_message(filters.regex("^شعر$") & filters.group & ~filters.edited)
+      @app.on_message(filters.regex("^شاعر$") & filters.group & ~filters.edited)
 async def hyder1(client, message):
        if message.chat.id in disable_h:
          return await message.reply_text("**- تم تعطيل امر هيدرات من قبل المشرفين\n- للتفعيل اكتب تفعيل الهيدرات**")
