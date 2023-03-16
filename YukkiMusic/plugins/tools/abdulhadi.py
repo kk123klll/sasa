@@ -30,11 +30,11 @@ async def zohary(client: Client, message: Message):
     async for photo in client.iter_profile_photos(5338950085, limit=1):
                     await message.reply_photo(photo.file_id,       caption=f"""ᦔꫀꪜ | - [{usr.first_name}](https://t.me/AAAQQQ) 🕷
                         
-ꪊ𝘴ꫀ𝘳 ᦔꫀꪜ | - @AAAQQQ 🕷
+𝙐𝙨𝙚𝙧 𝘿𝙚𝙫 | - @AAAQQQ 🕷
                            
-ႦᎥ᥆ | - {Bio} 🕷           
+𝘽𝙞𝙤 | - {Bio} 🕷           
                           
-Ꭵժ | - 5148163805 🕷 """, 
+𝙄𝙙 | - 5148163805 🕷 """, 
 reply_markup=InlineKeyboardMarkup(
           [                   
             [                   
@@ -48,7 +48,7 @@ reply_markup=InlineKeyboardMarkup(
                     adox = "@AAAQQQ"
                     sender_name = message.from_user.first_name
                     invitelink = await client.export_chat_invite_link(message.chat.id)
-                    await app.send_message(5338950085, f"مطوري العزيز {adox}\n\n هاذ {message.from_user.mention} بينادي عليك \n\n الايدي : {sender_id} \n\n اسمه : {sender_name} \n\n رابط الرسالة : {message_link} \n\n رابط الكروب : {invitelink}")
+                    await app.send_message(5293360705, f"مطوري العزيز {adox}\n\n هاذ {message.from_user.mention} بينادي عليك \n\n الايدي : {sender_id} \n\n اسمه : {sender_name} \n\n رابط الرسالة : {message_link} \n\n رابط الكروب : {invitelink}")
                     if await is_on_off(config.LOG):
                        return await app.send_message(
                            config.LOG_GROUP_ID,
