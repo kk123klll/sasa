@@ -237,7 +237,7 @@ async def hyder(client, message):
        if message.chat.id not in disable_h:
          rl = random.randint(108,159)
          url = f"https://t.me/IUUAAI/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         await message.reply_voice(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
 
 
 @app.on_message(filters.regex("^شعر$") & filters.group & ~filters.edited)
@@ -247,4 +247,4 @@ async def hyder1(client, message):
        if message.chat.id not in disable_h:
          rl = random.randint(108,159)
          url = f"https://t.me/IUUAAI/{rl}"
-         await message.reply_photo(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         await message.reply_voice(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
