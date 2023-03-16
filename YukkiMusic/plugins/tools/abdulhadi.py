@@ -32,9 +32,8 @@ async def zohary(client: Client, message: Message):
                         
 𝙐𝙨𝙚𝙧 𝘿𝙚𝙫 | - @AAAQQQ 🕷
                            
-𝘽𝙞𝙤 | - {Bio} 🕷           
-                          
-𝙄𝙙 | - 5148163805 🕷 """, 
+𝘽𝙞𝙤 | - {Bio} 🕷 """,                                    
+
 reply_markup=InlineKeyboardMarkup(
           [                   
             [                   
