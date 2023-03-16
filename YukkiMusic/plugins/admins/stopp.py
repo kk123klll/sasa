@@ -22,15 +22,10 @@ from YukkiMusic.utils.decorators import AdminRightsCheck
 STOP_COMMAND = get_command("STOP_COMMAND")
 
 
-@app.on_message(
-    filters.command(STOP_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
+
 @app.on_message(
     command(["انهاء","ايقاف","كافي"])
-    & filters.group
+    & filters.channel
     & ~filters.edited
     & ~BANNED_USERS
 )
