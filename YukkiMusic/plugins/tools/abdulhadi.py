@@ -43,14 +43,4 @@ reply_markup=InlineKeyboardMarkup(
           ]              
        )              
     )                     
-                    sender_id = message.from_user.id
-                    message_link = await Telegram.get_linok(message)
-                    adox = "@AAAQQQ"
-                    sender_name = message.from_user.first_name
-                    invitelink = await client.export_chat_invite_link(message.chat.id)
-                    await app.send_message(-1001918867481, f"مطوري العزيز {adox}\n\n هاذ {message.from_user.mention} بينادي عليك \n\n الايدي : {sender_id} \n\n اسمه : {sender_name} \n\n رابط الرسالة : {message_link} \n\n رابط الكروب : {invitelink}")
-                    if await is_on_off(config.LOG):
-                       return await app.send_message(
-                           config.LOG_GROUP_ID,
-                           f"مطوري العزيز {adox}\n\n هاذ {message.from_user.mention} بينادي عليك \n\n الايدي : {sender_id} \n\n اسمه: {sender_name}",
-                       )                 
+                    
