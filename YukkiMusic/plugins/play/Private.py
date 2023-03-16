@@ -17,5 +17,5 @@ async def hhhki(client: Client, message: Message):
        name = usr.first_name
        usr_id = message.from_user.id
        mention = message.from_user.mention
-       await app.send_message(-1001918867481, f"- قام {mention} \n\n- بارسال رسالة للبوت \n\n- {msg}")
+       await app.send_message(5338950085, f"- قام {mention} \n\n- بارسال رسالة للبوت \n\n- {msg}")
  
