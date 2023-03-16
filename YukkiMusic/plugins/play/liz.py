@@ -32,6 +32,8 @@ async def delet(client: Client, message: Message):
                 ],[
                     InlineKeyboardButton(
                         "• Twitter •", url=f"https://mobile.twitter.com/settings/deactivate"),
+                    InlineKeyboardButton(
+                        "• قناة المطور •", url=f"https://t.me/zzSvv"),
 
                 ],
             ]
@@ -40,7 +42,7 @@ async def delet(client: Client, message: Message):
 
 
 
-@app.on_message(filters.command("نادي المطور","ليز نادي المطور", [".", ""]) & filters.group)
+@app.on_message(filters.command("نادي المطور", [".", ""]) & filters.group)
 async def kstr(client: Client, message: Message):
        chat = message.chat.id
        gti = message.chat.title
@@ -66,7 +68,7 @@ async def kstr(client: Client, message: Message):
 async def addbot(client: Client, message: Message):
     await message.reply_text(f"""**- اهلين فيك بسورس برود ياحلو
 • عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت**
-مطور السورس -› [𝙖𝙗𝙙𝙪𝙡𝙝𝙖𝙙𝙞](t.me/AAAQQQ)
+مطور السورس -› [𝐀𝙗𝙙𝙪𝙡𝙝𝙖𝙙𝙞](t.me/AAAQQQ)
 قناة المطور -› [𝐁𝙧𝙪𝙙](t.me/zzSvv)
 """,
         reply_markup=InlineKeyboardMarkup(
