@@ -196,8 +196,8 @@ async def qw2(client,message):
        if message.chat.id in disable_G:
          return await message.reply_text("**- تم تعطيل امر الاقتباسات من قبل المشرفين**")
        if message.chat.id not in disable_G:
-         rl = random.randint(1824,3267)
-         url = requests.get(f"https://t.me/JuuuT/{rl}").text
+         rl = random.randint(3,795)
+         url = requests.get(f"https://t.me/vvooi6/{rl}").text
          caption = re.findall(r'<meta property="og:description" content="(.*)">',str(url))
          await message.reply_text("-›" + str(caption[0]))
 
