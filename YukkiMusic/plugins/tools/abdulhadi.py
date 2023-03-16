@@ -28,7 +28,7 @@ async def zohary(client: Client, message: Message):
     user = await client.get_chat(5338950085)
     Bio = user.bio
     async for photo in client.iter_profile_photos(5338950085, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""ᦔꫀꪜ | - [{usr.first_name}](https://t.me/AAAQQQ) 🕷
+                    await message.reply_photo(photo.file_id,       caption=f"""𝘿𝙚𝙫 | - [{usr.first_name}](https://t.me/AAAQQQ) 🕷
                         
 𝙐𝙨𝙚𝙧 𝘿𝙚𝙫 | - @AAAQQQ 🕷
                            
