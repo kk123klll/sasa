@@ -103,7 +103,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتار بنات من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(3,247)
+         rl = random.randint(3,600)
          url = f"https://t.me/vvooi2/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
@@ -112,7 +112,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات بنات من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(3,247)
+         rl = random.randint(3,600)
          url = f"https://t.me/vvooi2/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
@@ -122,7 +122,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتار ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint()
+         rl = random.randint(3,589)
          url = f"https://t.me/vvooi5/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
@@ -131,7 +131,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint()
+         rl = random.randint(3,589)
          url = f"https://t.me/vvooi5/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
@@ -140,7 +140,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات مكس من قبل المشرفين**")
        if message.chat.id not in disable_A:
-         rl = random.randint(2,217)
+         rl = random.randint(2,674)
          url = f"https://t.me/vvooi3/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
@@ -235,7 +235,7 @@ async def hyder(client, message):
        if message.chat.id in disable_h:
          return await message.reply_text("**- تم تعطيل امر الشعر من قبل المشرفين\n- للتفعيل اكتب تفعيل الشعر**")
        if message.chat.id not in disable_h:
-         rl = random.randint(3,303)
+         rl = random.randint(3,763)
          url = f"https://t.me/vvooi1/{rl}"
          await message.reply_voice(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
 
@@ -245,6 +245,6 @@ async def hyder1(client, message):
        if message.chat.id in disable_h:
          return await message.reply_text("**- تم تعطيل امر الشعر من قبل المشرفين\n- للتفعيل اكتب تفعيل الشعر**")
        if message.chat.id not in disable_h:
-         rl = random.randint(3,303)
+         rl = random.randint(3,763)
          url = f"https://t.me/vvooi1/{rl}"
          await message.reply_voice(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
