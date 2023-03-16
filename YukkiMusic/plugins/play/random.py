@@ -131,7 +131,7 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(3,589)
+         rl = random.randint(3,117)
          url = f"https://t.me/vvooi5/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
