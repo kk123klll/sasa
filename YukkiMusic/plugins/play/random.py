@@ -59,9 +59,9 @@ async def musicme(client, message):
        if message.chat.id in disable:
          return await message.reply_text("**- تم تعطيل امر غنيلي من قبل المشرفين**")
        if message.chat.id not in disable:
-         rl = random.randint(4,103)
-         url = f"https://t.me/NNNNNGN/{rl}"
-         await message.reply_voice(url,caption="-› [• 𝑷𝒓𝒐𝒑𝒆𝒓𝒕𝒚 𝑴𝒊𝒓𝒂 •](t.me/JuuuT)")
+         rl = random.randint(2,277)
+         url = f"https://t.me/vvooi4/{rl}"
+         await message.reply_voice(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
 
 
@@ -122,8 +122,8 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتار ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(135,173)
-         url = f"https://t.me/NNNNNGN/{rl}"
+         rl = random.randint()
+         url = f"https://t.me/vvooi5/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
 @app.on_message(filters.regex("^افتارات ولد$") & filters.group & ~filters.edited)
@@ -131,8 +131,8 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات ولد من قبل المشرفين\n- للتفعيل اكتب تفعيل الافتارات**")
        if message.chat.id not in disable_A:
-         rl = random.randint(135,173)
-         url = f"https://t.me/NNNNNGN/{rl}"
+         rl = random.randint()
+         url = f"https://t.me/vvooi5/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
 @app.on_message(filters.regex("^افتارات مكس$") & filters.group & ~filters.edited)
@@ -140,8 +140,8 @@ async def ava(client, message):
        if message.chat.id in disable_A:
          return await message.reply_text("**- تم تعطيل امر افتارات مكس من قبل المشرفين**")
        if message.chat.id not in disable_A:
-         rl = random.randint(175,196)
-         url = f"https://t.me/NNNNNGN/{rl}"
+         rl = random.randint(2,217)
+         url = f"https://t.me/vvooi3/{rl}"
          await message.reply_photo(url,caption="-› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)")
          
 
