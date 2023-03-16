@@ -84,7 +84,7 @@ AUTO_SUGGESTION_TIME = int(
 )  # Remember to give value in Seconds
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
-AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", " True")
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
@@ -116,7 +116,7 @@ PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
-    getenv("CLEANMODE_MINS", "60")
+    getenv("CLEANMODE_MINS", "360")
 )  # Remember to give value in Seconds
 
 
@@ -139,7 +139,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 # STRING2 = getenv("STRING_SESSION2", NYou'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot")
 STRING1 = getenv("STRING_SESSION", "")
 STRING2 = getenv("STRING_SESSION2", "")
-STRING3 = getenv("STRING_SESSION3", None)
+STRING3 = getenv("STRING_SESSION3", "")
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
