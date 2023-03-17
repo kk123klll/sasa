@@ -52,7 +52,7 @@ STATS_COMMAND = get_command("STATS_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    filters.command("احصائيات")
+    filters.command(["احصائيات"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
