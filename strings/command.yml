@@ -33,7 +33,7 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["song", "video"]
+SONG_COMMAND : ["song", "video", "بحث", "/بحث"]
 LYRICS_COMMAND : ["lyrics"]
 
 
@@ -57,7 +57,7 @@ RESTART_COMMAND : ["restart"]
 # Sudo Command
 ADDSUDO_COMMAND : ["addsudo"]
 DELSUDO_COMMAND : ["delsudo"]
-SUDOUSERS_COMMAND : ["sudolist"]
+SUDOUSERS_COMMAND : ["sudolist",  "المطورين", "/المطورين"]
 
 #Broadcast 
 BROADCAST_COMMAND : ["broadcast"]
