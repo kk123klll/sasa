@@ -249,7 +249,7 @@ async def hyder(client, message):
          await message.reply_voice(url,caption="-› [•𝐁𝙧𝙪𝙙•](t.me/zzsvv)")
         
         
-        @app.on_message(filters.regex("^ش$") & filters.group & ~filters.edited)
+@app.on_message(filters.regex("^ش$") & filters.group & ~filters.edited)
 async def musicme(client, message):
        if message.chat.id in disable:
          return await message.reply_text("**- تم تعطيل امر الشعر من قبل المشرفين**")
