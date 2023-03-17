@@ -26,6 +26,12 @@ SEEK_COMMAND = get_command("SEEK_COMMAND")
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
+) 
+@app.on_message(
+    filters.command("تق")
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def seek_comm(cli, message: Message, _, chat_id):
