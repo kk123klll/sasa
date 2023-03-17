@@ -43,12 +43,12 @@ UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
 PAUSE_COMMAND : ["pause", "cpause", "مؤقت", "اسكت شويه", "/مؤقت", "/اسكت شويه"]
 RESUME_COMMAND : ["resume", "cresume", "استئناف", "/استئناف"]
-MUTE_COMMAND : ["mute", "cmute"]
+MUTE_COMMAND : ["mute", "cmute", "كتم" ,"/كتم"]
 UNMUTE_COMMAND : ["unmute", "cunmute"]
 STOP_COMMAND : ["stop", "end", "cstop", "cend"]
 SKIP_COMMAND : ["skip", "cskip"]
-SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop"]
+SHUFFLE_COMMAND : ["shuffle", "cshuffle", "تبديل", "/تبديل"]
+LOOP_COMMAND : ["loop", "cloop", "تكرار", "/تكرار"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
@@ -85,8 +85,8 @@ VARS_COMMAND : ["vars", "config"]
 
 
 #Basic Bot Commands
-UPDATE_COMMAND : ["update" ,"تحديث"]
-REBOOT_COMMAND : ["reboot" ,"اعادة تشغيل"]
+UPDATE_COMMAND : ["update", "تحديث"]
+REBOOT_COMMAND : ["reboot", "اعادة تشغيل"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
@@ -95,16 +95,16 @@ UNAUTHORIZE_COMMAND : ["unauthorize"]
 AUTHORIZED_COMMAND : ["authorized"]
 
 #Block Users Command
-BLOCK_COMMAND : ["block", "حظر"]
-UNBLOCK_COMMAND : ["unblock", "الغاء حظر"]
+BLOCK_COMMAND : ["block", "حظر", "/حظر"]
+UNBLOCK_COMMAND : ["unblock", "الغاء حظر", "/الغاء حظر"]
 BLOCKED_COMMAND : ["blockedusers", "المستخدمين المحظورين"]
 
 #sPEEDTEST
-SPEEDTEST_COMMAND : ["speedtest", "السرعة"]
+SPEEDTEST_COMMAND : ["speedtest", "السرعة", "/السرعة"]
 
 #Voice chat commands
-ACTIVEVC_COMMAND : ["activevoice", "صوت"]
-ACTIVEVIDEO_COMMAND : ["activevideo" ,"فيديو"]
+ACTIVEVC_COMMAND : ["activevoice", "صوت", "/صوت"]
+ACTIVEVIDEO_COMMAND : ["activevideo" ,"فيديو", "فيديو"]
 
 #Gban Commands
 GBAN_COMMAND : ["gban"]
