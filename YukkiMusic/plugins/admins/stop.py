@@ -29,7 +29,7 @@ STOP_COMMAND = get_command("STOP_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["انهاء","ايقاف","كافي"])
+    command(["انهاء","ايقاف"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
