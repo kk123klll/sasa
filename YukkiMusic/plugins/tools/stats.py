@@ -51,6 +51,12 @@ STATS_COMMAND = get_command("STATS_COMMAND")
     & ~filters.edited
     & ~BANNED_USERS
 )
+@app.on_message(
+    filters.command("احصائيات")
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
+)
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(
