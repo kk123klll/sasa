@@ -25,7 +25,7 @@ PING_COMMAND = get_command("PING_COMMAND")
 
 
 @app.on_message(
-    filters.command(["pins","بنغي"])
+    command(["pins","بنغي"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
