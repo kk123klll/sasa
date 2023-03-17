@@ -12,6 +12,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
@@ -28,7 +29,7 @@ LOOP_COMMAND = get_command("LOOP_COMMAND")
     & ~BANNED_USERS
 ) 
 @app.on_message(
-    filters.command(["تكرار"])
+    command(["تكرار"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
