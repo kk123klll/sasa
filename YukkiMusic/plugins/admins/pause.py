@@ -26,6 +26,12 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
+) 
+@app.on_message(
+    filters.command("اسكت شويه","مؤقت")
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def pause_admin(cli, message: Message, _, chat_id):
