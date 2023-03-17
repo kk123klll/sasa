@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/hsiwudhswid8d >.
 #
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# This file is part of < https://github.com/hsiwudhswid8d/vv > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+# Please see < https://github.com/hsiwudhswid8d/vv/LICENSE >
 #
 # All rights reserved.
 
@@ -41,23 +41,21 @@ def help_pannel(_, START: Union[bool, int] = None):
                     text=_["H_B_2"],
                     callback_data="help_callback hb2",
                 ),
+            ],
+            [
                 InlineKeyboardButton(
                     text=_["H_B_3"],
                     callback_data="help_callback hb3",
                 ),
-            ],
-            [
                 InlineKeyboardButton(
                     text=_["H_B_4"],
                     callback_data="help_callback hb4",
                 ),
+            ],
+            [
                 InlineKeyboardButton(
                     text=_["H_B_6"],
                     callback_data="help_callback hb5",
-                ),
-                InlineKeyboardButton(
-                    text="المزيد",
-                    callback_data="help_callback hb7",
                 ),
             ],
             mark,
