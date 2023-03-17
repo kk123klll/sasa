@@ -12,6 +12,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import YouTube, app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.misc import db
@@ -28,7 +29,7 @@ SEEK_COMMAND = get_command("SEEK_COMMAND")
     & ~BANNED_USERS
 ) 
 @app.on_message(
-    filters.command(["تق"])
+    command(["تق"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
