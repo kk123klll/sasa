@@ -14,6 +14,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
+from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.misc import db
 from YukkiMusic.utils.decorators import AdminRightsCheck
@@ -29,7 +30,7 @@ SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
     & ~BANNED_USERS
 ) 
 @app.on_message(
-    filters.command(["ترتيب"])
+    command(["ترتيب"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
