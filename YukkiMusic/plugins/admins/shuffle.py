@@ -29,7 +29,7 @@ SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
     & ~BANNED_USERS
 ) 
 @app.on_message(
-    filters.command("ترتيب")
+    filters.command(["ترتيب"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
