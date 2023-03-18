@@ -7,12 +7,12 @@
 #
 # All rights reserved.
 
+from strings.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
-
+from strings import get_string
 from config import BANNED_USERS
 from strings import get_command
-from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import is_music_playing, music_off
@@ -23,16 +23,8 @@ PAUSE_COMMAND = get_command("PAUSE_COMMAND")
 
 
 @app.on_message(
-    filters.command(PAUSE_COMMAND)
+    command(PAUSE_COMMAND)
     & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-) 
-@app.on_message(
-    command(["اسكت شويه","مؤقت"])
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def pause_admin(cli, message: Message, _, chat_id):
@@ -44,4 +36,23 @@ async def pause_admin(cli, message: Message, _, chat_id):
     await Yukki.pause_stream(chat_id)
     await message.reply_text(
         _["admin_2"].format(message.from_user.mention)
+    )
+    
+    
+    
+@app.on_message(
+    command(PAUSE_COMMAND)
+    & filters.channel
+)
+async def pauseadmin(cli, message):
+    _ = get_string("en")
+    chat_id = message.chat.id
+    if not len(message.command) == 1:
+        return await message.reply_text(_["general_2"])
+    if not await is_music_playing(chat_id):
+        return await message.reply_text(_["admin_1"])
+    await music_off(chat_id)
+    await Yukki.pause_stream(chat_id)
+    await message.reply_text(
+        _["admin_2"].format(message.chat.title)
     )

@@ -7,12 +7,12 @@
 #
 # All rights reserved.
 
+from strings.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
-
+from strings import get_string
 from config import BANNED_USERS
 from strings import get_command
-from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import is_music_playing, music_on
@@ -23,16 +23,8 @@ RESUME_COMMAND = get_command("RESUME_COMMAND")
 
 
 @app.on_message(
-    filters.command(RESUME_COMMAND)
+    command(RESUME_COMMAND)
     & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-) 
-@app.on_message(
-    command(["استئناف","كملي"])
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def resume_com(cli, message: Message, _, chat_id):
@@ -44,4 +36,24 @@ async def resume_com(cli, message: Message, _, chat_id):
     await Yukki.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention)
+    )
+
+
+
+
+@app.on_message(
+    command(RESUME_COMMAND)
+    & filters.channel
+)
+async def resumecom(cli, message):
+    chat_id = message.chat.id
+    _ = get_string("en")
+    if not len(message.command) == 1:
+        return await message.reply_text(_["general_2"])
+    if await is_music_playing(chat_id):
+        return await message.reply_text(_["admin_3"])
+    await music_on(chat_id)
+    await Yukki.resume_stream(chat_id)
+    await message.reply_text(
+        _["admin_4"].format(message.chat.title)
     )
