@@ -7,12 +7,12 @@
 #
 # All rights reserved.
 
+from strings.filters import command
 from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from strings.filters import command
 from YukkiMusic import app
 from YukkiMusic.core.call import Yukki
 from YukkiMusic.utils.database import is_muted, mute_off
@@ -23,13 +23,7 @@ UNMUTE_COMMAND = get_command("UNMUTE_COMMAND")
 
 
 @app.on_message(
-    filters.command(UNMUTE_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
-)
-@app.on_message(
-    command(["كمل"])
+    command(UNMUTE_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
