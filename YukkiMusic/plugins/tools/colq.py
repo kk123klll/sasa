@@ -38,7 +38,7 @@ async def strcall(client, message):
         for participant in participants:
             info = participant
             if info.muted == False:
-                mut=f"٭{participant.volume}◉ ♡ يتحدث ◉"
+                mut=f"◉{participant.volume}◉ ♡ يتحدث ◉"
             else:
                 mut="◎ ♪ ساكت ◎"
             user = await client.get_users(participant.user_id)
