@@ -91,7 +91,7 @@ async def khalid(client: Client, message: Message):
 
     async for photo in client.iter_profile_photos(5739175556, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"- هلا عمري {message.from_user.mention}\n- اسمي ليز ، أضغط على الزر لتشوف اوامري.", 
+                    await message.reply_photo(photo.file_id,       caption=f"- هلا عمري {message.from_user.mention}\n- اسمي ليان ، أضغط على الزر لتشوف اوامري.", 
 
         reply_markup=InlineKeyboardMarkup(
 
