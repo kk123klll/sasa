@@ -7,7 +7,7 @@ from YukkiMusic.core.call import Yukki
 from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 
-@app.on_message(filters.regex("^مين صاعد$|^مين بالاتصال$|^مين في الكول$"))
+@app.on_message(filters.regex("^مين صاعد$|^مين بالاتصال$|^مين فالكول$"))
 async def strcall(client, message):
     assistant = await group_assistant(Yukki,message.chat.id)
     try:
