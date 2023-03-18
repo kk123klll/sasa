@@ -16,7 +16,7 @@ from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, ap
 
 @app.on_message(filters.regex("^روابط الحذف$"))
 async def delet(client: Client, message: Message):
-    await message.reply_text(f"""**- اهلين ياحلو\n-› هذي روابط حذف جميع مواقع التواصل بالتوفيق**""",
+    await message.reply_text(f"""**- اهلين عمري\n-› هذول روابط حذف جميع مواقع التواصل بالتوفيق**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -59,7 +59,7 @@ async def kstr(client: Client, message: Message):
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **ابشر عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشان تشوف التحديثات** -› [• 𝐒𝙤𝙪𝙧𝙘𝙚 𝐁𝙧𝙪𝙙 •](t.me/Q_J_M)""", disable_web_page_preview=True     
+        f"""- **عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت عشان تشوف التحديثات** -› [• 𝐒𝙤𝙪𝙧𝙘𝙚 𝐁𝙧𝙪𝙙 •](t.me/Q_J_M)""", disable_web_page_preview=True     
     )
 
 
