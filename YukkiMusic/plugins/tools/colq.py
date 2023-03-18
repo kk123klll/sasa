@@ -49,6 +49,3 @@ async def strcall(client, message):
         await message.reply(f"{text}")
     except TelegramServerError:
         await message.reply(f"ارسل الامر تاني في مشكله في سيرفر التلجرام\n❌")
-        
-        
-#المطور محمد ← بوتي : @J_AA_BOT
