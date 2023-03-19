@@ -138,8 +138,8 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # STRING2 = getenv("STRING_SESSION2", NYou'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot")
 STRING1 = getenv("STRING_SESSION", "")
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
+STRING2 = getenv("STRING_SESSION2", "")
+STRING3 = getenv("STRING_SESSION3", "")
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
 
