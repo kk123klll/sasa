@@ -12,7 +12,7 @@ import random
 from pyrogram.types import InlineKeyboardButton
 
 selections = [
-    "◁╺╺╺╺ □ ╸╸╸╸▷",
+    "◁╺╺╺╺ ♡ ╸╸╸╸▷",
 ]
 
 
@@ -217,19 +217,19 @@ def panel_markup_1(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="• توقف •", callback_data=f"ADMIN Pause|{chat_id}"
+                text="◈ توقف ◈", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="• استئناف •",
+                text="◈ استئناف ◈",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="• تخطي •", callback_data=f"ADMIN Skip|{chat_id}"
+                text="◈ تخطي ◈", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="• أنهاء •", callback_data=f"ADMIN Stop|{chat_id}"
+                text="◈ أنهاء ◈", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
@@ -254,25 +254,25 @@ def panel_markup_2(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="• كتم •", callback_data=f"ADMIN Mute|{chat_id}"
+                text="◈ كتم ◈", callback_data=f"ADMIN Mute|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="• كمل •",
+                text="◈ كمل ◈",
                 callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="• خلط •",
+                text="◈ خلط ◈",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="• دمج •", callback_data=f"ADMIN Loop|{chat_id}"
+                text="◈ دمج ◈", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="❮",
+                text="❮", 
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
