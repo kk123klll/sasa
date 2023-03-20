@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "13357248",
+        "value": "",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "a5561fada4559921915d27736c592ddd",
+        "value": "",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -30,7 +30,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "5293360705:AAGUWyTAWC-9F1JHJEDOhcGL9LCoKcHqekg",
+        "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -50,12 +50,12 @@
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "BAAileuPBjogoIWEsxgcnpXV2r9jHshYZQ-LskRTaCF0KKOQck7GxYNiXSaMzOhckW3umzcdaGW6V7DH9GYMThOVAIzguNT3szhu-igAj2ZssQP8JhPUifs-yQ5CVC2oQ-poo1HeXb3xjPEXndbKH_i1-hXPhoQD6XWe4zWKQLdDvn0pp3U5pkVKQEjgyd_pNmdkOOAoPxeRZ2vUeuxISHQITKAsS6swZ_ObdPlqTPIlCHzQlsUjznCReAM73Nr7t5zCVImUJ36A3qoraDf5I-U7No67wfgVnnBaVDU72e_qBf0ovixE-nA5pUKGhYVTcIPOHgahZ4nQe6cihBAQIJ1YAAAAAVBZ3IkA",
+        "value": "",
         "required": true
       },
       "GIT_TOKEN": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "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",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -70,12 +70,12 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1001918867481",
+        "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/xiipq/ml",
+        "value": "",
         "required": true
       },
       "UPSTREAM_BRANCH": {
