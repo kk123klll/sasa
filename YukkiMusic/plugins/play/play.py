@@ -65,7 +65,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & ~BANNED_USERS
 )
 @app.on_message(
-    command(["تشغيل","شغل","ليان شغلي"])
+    command(["تشغيل","شغل"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
