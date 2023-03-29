@@ -85,13 +85,13 @@ def get_file_id(msg: Message):
 
 async def khalid(client: Client, message: Message):
 
-    usr = await client.get_users(5739175556)
+    usr = await client.get_users(5604740499)
 
     name = usr.first_name
 
-    async for photo in client.iter_profile_photos(5739175556, limit=1):
+    async for photo in client.iter_profile_photos(5604740499, limit=1):
 
-                    await message.reply_photo(photo.file_id,       caption=f"- هلا عمري {message.from_user.mention}\n- اسمي ليز ، أضغط على الزر لتشوف اوامري.", 
+                    await message.reply_photo(photo.file_id,       caption=f"- هلا عمري {message.from_user.mention}\n- اسمي كويب ، أضغط على الزر لتشوف اوامري.", 
 
         reply_markup=InlineKeyboardMarkup(
 
@@ -101,13 +101,13 @@ async def khalid(client: Client, message: Message):
 
                     InlineKeyboardButton(
 
-                      "- الأوامر .", url=f"https://t.me/ZXXCAQPBOT?start=help") 
+                      "- الأوامر .", url=f"https://t.me/Hdtkbot?start=help") 
 
                 ],[
 
                     InlineKeyboardButton(
 
-                       "- ضيفني لكروبك .", url=f"https://t.me/ZXXCAQPBOT?startgroup=true"),
+                       "- ضيفني لكروبك .", url=f"https://t.me/Hdtkbot?startgroup=true"),
 
                 ],
 
