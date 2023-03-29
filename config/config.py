@@ -138,7 +138,7 @@ SET_CMDS = getenv("SET_CMDS", False)
 
 # STRING2 = getenv("STRING_SESSION2", NYou'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot")
 STRING1 = getenv("STRING_SESSION", "")
-STRING2 = getenv("STRING_SESSION2", "")
+STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
@@ -169,17 +169,17 @@ autoclean = []
 # Images
 START_IMG_URL = getenv("START_IMG_URL", None)
 
-PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
-STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
@@ -191,7 +191,7 @@ SOUNCLOUD_IMG_URL = getenv(
     "assets/Soundcloud.jpeg",
 )
 
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://telegra.ph/file/5d66e9e83d74cf9ec73cd.jpg") 
+YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL",
