@@ -30,7 +30,7 @@ SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
     & ~BANNED_USERS
 ) 
 @app.on_message(
-    command(["ليان تر"])
+    command(["كويب تر"])
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
