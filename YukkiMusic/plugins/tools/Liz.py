@@ -33,7 +33,7 @@ async def delet(client: Client, message: Message):
                     InlineKeyboardButton(
                         "• Twitter •", url=f"https://mobile.twitter.com/settings/deactivate"),
                     InlineKeyboardButton(
-                        "• قناة المطور •", url=f"https://t.me/zzSvv"),
+                        "• قناة المطور •", url=f"https://t.me/sx_hu"),
 
                 ],
             ]
@@ -55,30 +55,30 @@ async def kstr(client: Client, message: Message):
        buttons = [[InlineKeyboardButton(gti, url=f"{link}")]]
        reply_markup = InlineKeyboardMarkup(buttons)
        
-       await app.send_message(5338950085, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
+       await app.send_message(1576257432, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت** -› [• 𝐁𝙧𝙪𝙙 •](t.me/zzsvv)""", disable_web_page_preview=True     
+        f"""- **عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت** -› [ᴋᴏʏᴇʙ sᴏᴜʀᴄᴇ](t.me/sx_hu)""", disable_web_page_preview=True     
     )
 
 
         
 @app.on_message(filters.group & command("السورس"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""**- اهلين فيك بسورس برود ياحلو
+    await message.reply_text(f"""**- اهلين فيك بسورس كويب ياحلو
 • عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت**
-مطور السورس -› [𝐀𝙗𝙙𝙪𝙡𝙝𝙖𝙙𝙞](t.me/AAAQQQ)
-قناة المطور -› [𝐁𝙧𝙪𝙙](t.me/zzSvv)
+مطور السورس -› [𝑂𝑚𝑎𝑟 𝑎𝑙’𝑠ℎ𝑢𝑗𝑒𝑟𝑦](t.me/nnhnn)
+قناة المطور -› [ᴋᴏʏᴇʙ sᴏᴜʀᴄᴇ](https://t.me/sx_hu)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثات البوت 〆", url=f"https://t.me/Q_J_M"),
+                        "تحديثات البوت 〆", url=f"https://t.me/sx_hu"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لكروبك 🎻", url=f"https://t.me/ZXXCAQPBOT?startgroup=true"),
+                        "• ضيفني لكروبك 🎻", url=f"https://t.me/Hdtkbot?startgroup=true"),
                 ],
             ]
         ),
