@@ -23,21 +23,21 @@ from YukkiMusic.utils.database import (add_served_chat,
     & ~filters.edited
 )
 async def zohary(client: Client, message: Message):
-    usr = await client.get_users(1576257432) 
+    usr = await client.get_users(2071390943) 
     name = usr.first_name
-    user = await client.get_chat(1576257432)
+    user = await client.get_chat(2071390943)
     Bio = user.bio
-    async for photo in client.iter_profile_photos(1576257432, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""𝙉𝙖𝙢𝙚 | - [{usr.first_name}](https://t.me/nnhnn) 🕷
+    async for photo in client.iter_profile_photos(2071390943, limit=1):
+                    await message.reply_photo(photo.file_id,       caption=f"""𝙉𝙖𝙢𝙚 | - [{usr.first_name}](https://t.me/clark_iq) 🕷
                         
-𝙐𝙨𝙚𝙧 | - @nnhnn 🕷
+𝙐𝙨𝙚𝙧 | - @clark_iq 🕷
                            
 𝘽𝙞𝙤 | - {Bio} 🕷 """,                                    
 
 reply_markup=InlineKeyboardMarkup(
           [                   
             [                   
-              InlineKeyboardButton (name, url=f"https://t.me/nnhnn")
+              InlineKeyboardButton (name, url=f"https://t.me/clark_iq")
             ],               
           ]              
        )              
