@@ -167,19 +167,19 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", None)
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/b0741b39517d265d610d1.jpg")
 
-PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
-STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
