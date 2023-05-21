@@ -34,7 +34,7 @@ class YukkiBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "ليز ميوزك"
+                config.LOG_GROUP_ID, "مكسيكو ميوزك"
             )
         except:
             LOGGER(__name__).error(
@@ -46,10 +46,6 @@ class YukkiBot(Client):
     BotCommand("start", "رسالة البدء"),
     BotCommand("play", "لتشغيل أغنية في المكالمة"),
     BotCommand("vplay", "لتشغيل فيديو في المكالمة"),
-    BotCommand("skip", "تخطي الأغنية الحالية"),
-    BotCommand("mute", "كتم الأغنية"),
-    BotCommand("unmute", "الغاء كتم الأغنية"),
-    BotCommand("stop", "انهاء التشغيل"),
     BotCommand("sudolist", "طلب مساعدة المطور"),
     BotCommand("settings", "عرض أعدادات البوت")])
         except:
