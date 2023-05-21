@@ -30,9 +30,9 @@ def start_pannel(_):
 
             InlineKeyboardButton(
 
-                text="ᴋᴏʏᴇʙ sᴏᴜʀᴄᴇ",
+                text="╏𝗠𝗘𝗫𝗜𝗖𝗢 - سورس مكسيكو",
 
-                url=f"https://t.me/sx_hu",
+                url=f"https://t.me/llVYVY",
 
             ),
 
@@ -122,7 +122,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             
             InlineKeyboardButton(
 
-                text="ᴋᴏʏᴇʙ sᴏᴜʀᴄᴇ", url="https://t.me/sx_hu"
+                text="╏𝗠𝗘𝗫𝗜𝗖𝗢 - سورس مكسيكو", url="https://t.me/llVYVY"
 
             ),
 
