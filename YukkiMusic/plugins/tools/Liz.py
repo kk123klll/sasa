@@ -33,7 +33,7 @@ async def delet(client: Client, message: Message):
                     InlineKeyboardButton(
                         "• Twitter •", url=f"https://mobile.twitter.com/settings/deactivate"),
                     InlineKeyboardButton(
-                        "• قناة المطور •", url=f"https://t.me/llVYVY"),
+                        "• قناة المطور •", url=f"https://t.me/ll0llld"),
 
                 ],
             ]
@@ -55,30 +55,30 @@ async def kstr(client: Client, message: Message):
        buttons = [[InlineKeyboardButton(gti, url=f"{link}")]]
        reply_markup = InlineKeyboardMarkup(buttons)
        
-       await app.send_message(2071390943, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
+       await app.send_message(5933682219, f"- قام {message.from_user.mention}\n- بمناداتك عزيزي المطور\n- ايديه {user_id}\n- يوزره @{user_ab}\n- ايدي القروب {message.chat.id}\n- يوزر القروب {chatusername}",
        reply_markup=reply_markup,
        )
        await message.reply_text(
-        f"""- **عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت** -› [╏𝗠𝗘𝗫𝗜𝗖𝗢 - سورس مكسيكو](t.me/clark_iq)""", disable_web_page_preview=True     
+        f"""- **عمري راسلت المطور يدخل للكروب ويشوف مشكلتك بأقرب وقت\n\n- تابع قناة البوت** -› [سورس الاعصار ⟠ ⦂](t.me/ll0llld)""", disable_web_page_preview=True     
     )
 
 
         
 @app.on_message(filters.group & command("السورس"))
 async def addbot(client: Client, message: Message):
-    await message.reply_text(f"""**- اهلين فيك بسورس مكسيكو ياحلو
+    await message.reply_text(f"""**- اهلين فيك بسورس الاعصار عمري
 • عندك استفسار او اقتراح بخصوص البوت تواصل مع مطور البوت**
-مطور السورس -› [ڪـلُِآرك | 𝙲𝙻𝙰𝚁𝙺](t.me/clark_iq)
-قناة المطور -› [╏𝗠𝗘𝗫𝗜𝗖𝗢 - سورس مكسيكو](https://t.me/llVYVY)
+مطور السورس -› [عـۦ۬ﹻۦـﹻ۬ۦطۦ۬ﹻۦ۬ـر الــمــ-³⁹ـــــٓــﹷٰرجــلـه](t.me/S_1_02)
+قناة السورس -› [سورس الاعصار ⟠ ⦂](https://t.me/ll0llld)
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "تحديثات البوت 〆", url=f"https://t.me/llVYVY"),
+                        "تحديثات البوت 〆", url=f"https://t.me/ll0llld"),
                 ],[
                     InlineKeyboardButton(
-                        "• ضيفني لكروبك 🎻", url=f"https://t.me/mexmeo_bot?startgroup=true"),
+                        "• ضيفني لكروبك 🎻", url=f"https://t.me/M_A_Ebot?startgroup=true"),
                 ],
             ]
         ),
