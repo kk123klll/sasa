@@ -30,9 +30,9 @@ def start_pannel(_):
 
             InlineKeyboardButton(
 
-                text="╏𝗠𝗘𝗫𝗜𝗖𝗢 - سورس مكسيكو",
+                text="سورس الاعصار ⟠ ⦂",
 
-                url=f"https://t.me/llVYVY",
+                url=f"https://t.me/ll0llld",
 
             ),
 
