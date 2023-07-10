@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
 #
 # This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
@@ -41,14 +40,14 @@ LYRICS_COMMAND : ["lyrics"]
 AUTH_COMMAND : ["auth"]
 UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["pause", "cpause", "مكس اص", "مؤقت", "اسكت شويه"]
-RESUME_COMMAND : ["resume", "cresume", "استئناف", "مكس اس", "كمل"]
-MUTE_COMMAND : ["mute", "cmute", "كتم", "مكس مي"]
-UNMUTE_COMMAND : ["unmute", "cunmute", "الغاء الكتم", "مكس كت"]
-STOP_COMMAND : ["stop", "end", "cstop", "cend", "مكس ان", "انهاء", "ايقاف"]
-SKIP_COMMAND : ["skip", "cskip", "مكس تخ", "تخطي"]
+PAUSE_COMMAND : ["pause", "cpause", "مؤقت"]
+RESUME_COMMAND : ["resume", "cresume", "استئناف"]
+MUTE_COMMAND : ["mute", "cmute", "كتم"]
+UNMUTE_COMMAND : ["unmute", "cunmute", "الغاء الكتم"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend", "انهاء", "ايقاف"]
+SKIP_COMMAND : ["skip", "cskip", "تخطي"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["loop", "cloop", "مكس كرر", "تكرار"]
+LOOP_COMMAND : ["loop", "cloop", "تكرار"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
 RESTART_COMMAND : ["restart"]
 
