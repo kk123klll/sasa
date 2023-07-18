@@ -167,19 +167,19 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/b0741b39517d265d610d1.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg")
 
-PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+PING_IMG_URL = getenv("PING_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
-PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
-GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+GLOBAL_IMG_URL = getenv("GLOBAL_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
-STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
-TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+TELEGRAM_AUDIO_URL = getenv("TELEGRAM_AUDIO_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
-TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/7dd5a33522c798fca6553.jpg") 
+TELEGRAM_VIDEO_URL = getenv("TELEGRAM_VIDEO_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
 STREAM_IMG_URL = getenv(
     "STREAM_IMG_URL",
@@ -191,7 +191,7 @@ SOUNCLOUD_IMG_URL = getenv(
     "assets/Soundcloud.jpeg",
 )
 
-YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://telegra.ph/file/7deb3d502a68a2e462e4f.jpg") 
+YOUTUBE_IMG_URL = getenv("YOUTUBE_IMG_URL", "https://telegra.ph/file/b66bf51e4a3ff06b77620.jpg") 
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
     "SPOTIFY_ARTIST_IMG_URL",
