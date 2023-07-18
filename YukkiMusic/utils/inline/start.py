@@ -122,7 +122,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             
             InlineKeyboardButton(
 
-                text="╏سورس الاعصار ⟠ ⦂", url="https://t.me/ll0llld"
+                text="سورس الاعصار ⟠ ⦂", url="https://t.me/ll0llld"
 
             ),
 
